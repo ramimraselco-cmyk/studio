@@ -299,6 +299,19 @@
 
     document.addEventListener('DOMContentLoaded', playActiveHero);
 
+    function unlockMobileVideos() {
+      playActiveHero();
+      videos.forEach((v) => {
+        if (v.id === 'test-video') return;
+        v.muted = true;
+        v.setAttribute('playsinline', '');
+        v.setAttribute('webkit-playsinline', '');
+      });
+    }
+    ['touchstart', 'touchend', 'click', 'scroll', 'pointerdown'].forEach((evt) => {
+      window.addEventListener(evt, unlockMobileVideos, { once: true, passive: true });
+    });
+
 
 
     if (!('IntersectionObserver' in window)) {
@@ -579,90 +592,35 @@
 
       if (heroMedia && servicesSection) {
 
-        if (window.innerWidth < 650) {
-
-          // Mobile: Hero video fades smoothly into pure black as services section rolls over
-
-          gsap.to(heroMedia, {
-
+        // Optical Liquid Glass Zoom Refraction:
+        // As #services slides over the hero video, create a subtle magnifying zoom (scale: 1.0 -> 1.065)
+        gsap.fromTo(heroMedia,
+          { scale: 1.0 },
+          {
             scrollTrigger: {
-
               trigger: servicesSection,
-
-              start: 'top 80%',
-
-              end: 'top 20%',
-
+              start: 'top bottom',
+              end: 'bottom top',
               scrub: true,
-
             },
+            scale: 1.065,
+            ease: 'none',
+            transformOrigin: 'center center',
+          }
+        );
 
-            opacity: 0,
-
-            ease: 'power1.out',
-
-          });
-
-        } else {
-
-          // Desktop PC (100% UNCHANGED)
-
-          gsap.fromTo(heroMedia,
-
-            { scale: 1.0 },
-
-            {
-
-              scrollTrigger: {
-
-                trigger: servicesSection,
-
-                start: 'top bottom',
-
-                end: 'bottom top',
-
-                scrub: true,
-
-              },
-
-              scale: 1.065,
-
-              ease: 'none',
-
-              transformOrigin: 'center center',
-
-            }
-
-          );
-
-
-
-          // Hero media stays 100% visible and playing behind #services Liquid Glass!
-
-          // Only when #services completely finishes scrolling out of view (entering gallery-grid), fade out heroMedia
-
-          gsap.to(heroMedia, {
-
-            scrollTrigger: {
-
-              trigger: servicesSection,
-
-              start: 'bottom top',
-
-              end: 'bottom -50%',
-
-              scrub: true,
-
-            },
-
-            opacity: 0,
-
-            ease: 'power1.in',
-
-          });
-
-        }
-
+        // Hero media stays 100% visible and playing behind #services Liquid Glass!
+        // Only when #services completely finishes scrolling out of view (entering gallery-grid), fade out heroMedia
+        gsap.to(heroMedia, {
+          scrollTrigger: {
+            trigger: servicesSection,
+            start: 'bottom top',
+            end: 'bottom -50%',
+            scrub: true,
+          },
+          opacity: 0,
+          ease: 'power1.in',
+        });
       }
 
     }

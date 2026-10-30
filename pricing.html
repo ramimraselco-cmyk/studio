@@ -75,7 +75,6 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/fantasy-menu.css">
   <link rel="stylesheet" href="/assets/css/lenis.css">
-
   <style>
     /* =========================================================
        1. GLOBAL RESET & COLOR SYSTEM (Matches Index.html)
@@ -1816,12 +1815,20 @@
 
       <div class="fantasy-menu-center">
         <nav class="fantasy-nav-links" aria-label="Main Navigation">
-          <a href="/work.html" class="fantasy-link-item"><span class="fantasy-link-num">01</span><span class="fantasy-link-text">Work</span></a>
-          <a href="/services.html" class="fantasy-link-item"><span class="fantasy-link-num">02</span><span class="fantasy-link-text">Services</span></a>
-          <a href="/pricing.html" class="fantasy-link-item"><span class="fantasy-link-num">03</span><span class="fantasy-link-text">Pricing</span></a>
-          <a href="/about.html" class="fantasy-link-item"><span class="fantasy-link-num">04</span><span class="fantasy-link-text">About</span></a>
-          <a href="/contact.html" class="fantasy-link-item"><span class="fantasy-link-num">05</span><span class="fantasy-link-text">Contact</span></a>
+          <a href="/" class="fantasy-nav-item">Home</a>
+          <a href="/work.html" class="fantasy-nav-item">Work</a>
+          <a href="/services.html" class="fantasy-nav-item">Services</a>
+          <a href="/pricing.html" class="fantasy-nav-item active">Pricing</a>
+          <a href="/about.html" class="fantasy-nav-item">About</a>
         </nav>
+
+        <div class="fantasy-sub-links">
+          <a href="/contact.html" class="fantasy-sub-item">Contact</a>
+          <span class="fantasy-sub-dot">&bull;</span>
+          <a href="mailto:deedoxteam@gmail.com" class="fantasy-sub-item">deedoxteam@gmail.com</a>
+          <span class="fantasy-sub-dot">&bull;</span>
+          <a href="tel:+8801817296013" class="fantasy-sub-item">+8801817296013</a>
+        </div>
       </div>
 
       <div class="fantasy-menu-bottom">
@@ -2677,17 +2684,30 @@
     const menuCloseBtn = document.getElementById('menuCloseBtn');
 
     if (menuToggleBtn && deedoxMenu) {
-      menuToggleBtn.addEventListener('click', () => {
-        deedoxMenu.classList.add('is-open');
+      menuToggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        deedoxMenu.classList.remove('pointer-events-none', 'invisible', 'opacity-0');
+        deedoxMenu.classList.add('is-open', 'opacity-100', 'pointer-events-auto', 'visible');
         document.body.style.overflow = 'hidden';
       });
     }
     if (menuCloseBtn && deedoxMenu) {
-      menuCloseBtn.addEventListener('click', () => {
-        deedoxMenu.classList.remove('is-open');
+      menuCloseBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        deedoxMenu.classList.remove('is-open', 'opacity-100', 'pointer-events-auto', 'visible');
+        deedoxMenu.classList.add('pointer-events-none', 'invisible', 'opacity-0');
         document.body.style.overflow = '';
       });
     }
+
+    // Auto-close menu when link clicked
+    deedoxMenu && deedoxMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        deedoxMenu.classList.remove('is-open', 'opacity-100', 'pointer-events-auto', 'visible');
+        deedoxMenu.classList.add('pointer-events-none', 'invisible', 'opacity-0');
+        document.body.style.overflow = '';
+      });
+    });
 
     // ---------------------------------------------------------
     // 2. BANK CARDS VAULT SHOWCASE (Clean, Upright, Flat - Zero Crooked 3D Tilt)
@@ -3540,5 +3560,8 @@
 })();
 </script>
 
+<script src="/assets/js/fantasy-menu-controller.js"></script>
+
+<script src="/assets/js/animation-engine.js?v=20261031_mobile_fix"></script>
 </body>
 </html>

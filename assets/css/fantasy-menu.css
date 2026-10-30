@@ -23,7 +23,8 @@
   overflow-x: hidden;
 }
 
-#deedox-menu.opacity-100 {
+#deedox-menu.opacity-100,
+#deedox-menu.is-open {
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
@@ -46,7 +47,10 @@
 
 @media (max-width: 649px) {
   .fantasy-menu-inner {
-    padding: 20px 18px;
+    padding: 24px 20px 28px 20px !important;
+    justify-content: space-between !important;
+    min-height: 100dvh !important;
+    height: 100dvh !important;
   }
 }
 
@@ -303,3 +307,35 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 649px) {
+  .fantasy-nav-item {
+    font-size: clamp(2.6rem, 7.5vw, 4.0rem) !important;
+    padding: 6px 14px !important;
+    line-height: 1.2 !important;
+  }
+  .fantasy-nav-links {
+    gap: 6px !important;
+  }
+  .fantasy-sub-links {
+    gap: 12px !important;
+    margin-top: 16px !important;
+    font-size: 13px !important;
+  }
+  .fantasy-menu-bottom {
+    padding-top: 10px !important;
+    gap: 12px !important;
+  }
+  .fantasy-menu-prompt {
+    font-size: 13px !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+  .fantasy-featured-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: space-between !important;
+    padding: 8px 12px !important;
+  }
+}
+

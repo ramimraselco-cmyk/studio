@@ -1,0 +1,85 @@
+# ===================================================================
+# DEEDOX STUDIO — PRODUCTION APACHE / CPANEL REWRITE RULES (.htaccess)
+# Supports Namecheap, Hostinger, cPanel, LiteSpeed, Apache 2.4+
+# Fixes Clean URLs, Navigation Redirects, Directory Traversal & MIME Types
+# ===================================================================
+
+# 1. Basic Security & Options
+Options -Indexes +FollowSymLinks
+ServerSignature Off
+
+# 2. MIME Types
+<IfModule mod_mime.c>
+  AddType application/json                      .json
+  AddType image/svg+xml                         .svg .svgz
+  AddType font/woff2                            .woff2
+  AddType font/woff                             .woff
+  AddType video/mp4                             .mp4
+  AddType video/webm                            .webm
+  AddType application/manifest+json             .webmanifest
+  AddType application/xml                       .xml
+</IfModule>
+
+# 3. Rewrite Engine & Clean URL Mapping
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 3a. Specifically handle /services directory request so it serves services.html
+  # (Crucial: prevents 403 Forbidden or directory index errors on /services)
+  RewriteRule ^services/?$ services.html [NC,L]
+  RewriteRule ^services/index(\.html)?$ services.html [NC,L]
+
+  # 3b. Clean URLs for main pages
+  RewriteRule ^portfolio/?$ work.html [NC,L]
+  RewriteRule ^work/?$ work.html [NC,L]
+  RewriteRule ^pricing/?$ pricing.html [NC,L]
+  RewriteRule ^about/?$ about.html [NC,L]
+  RewriteRule ^contact/?$ contact.html [NC,L]
+  RewriteRule ^admin/?$ deedoxahmed7070.html [NC,L]
+  RewriteRule ^deedoxahmed7070/?$ deedoxahmed7070.html [NC,L]
+
+  # 3c. Service Sub-pages
+  RewriteRule ^services/website-development/?$ services/website-development.html [NC,L]
+  RewriteRule ^services/saas-development/?$ services/saas-development.html [NC,L]
+  RewriteRule ^services/app-development/?$ services/app-development.html [NC,L]
+  RewriteRule ^services/ai-automation-chatbots/?$ services/ai-automation-chatbots.html [NC,L]
+  RewriteRule ^services/ai-video-ads-design/?$ services/ai-video-ads-design.html [NC,L]
+
+  # 3d. API JSON Rewrites (For Dynamic CMS and settings)
+  RewriteRule ^api/settings/?$ data/site_settings.json [NC,L]
+  RewriteRule ^api/pricing/?$ data/pricing.json [NC,L]
+  RewriteRule ^api/works/?$ data/works.json [NC,L]
+  RewriteRule ^api/inquiries/?$ data/inquiries_response.json [NC,L]
+  RewriteRule ^api/status/?$ data/inquiries_response.json [NC,L]
+
+  # 3e. Universal HTML extension removal:
+  # If a requested path without extension exists as .html, serve it
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+
+  # 3f. Trailing slash cleanup
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [R=301,L]
+</IfModule>
+
+# 4. Custom Error Documents
+ErrorDocument 404 /404.html
+
+# 5. Security Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# 6. Video Byte-Range Streaming Support (CRITICAL for smooth MP4 playback on iOS / Safari)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(mp4|webm|ogg)$">
+    Header set Accept-Ranges bytes
+  </FilesMatch>
+</IfModule>

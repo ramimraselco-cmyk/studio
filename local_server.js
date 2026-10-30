@@ -706,25 +706,37 @@ async function handleRequest(req, res) {
   }
 
   fs.stat(safePath, (err, stats) => {
-    if (err || !stats.isFile()) {
+    let targetPath = safePath;
+    let targetStats = stats;
+
+    if (stats && stats.isDirectory()) {
+      const idxFile = path.join(safePath, 'index.html');
+      if (fs.existsSync(idxFile)) {
+        targetPath = idxFile;
+        targetStats = fs.statSync(idxFile);
+      } else {
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+        return res.end('404 Not Found');
+      }
+    } else if (err || !stats || !stats.isFile()) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       return res.end('404 Not Found');
     }
 
-    const ext = path.extname(safePath).toLowerCase();
+    const ext = path.extname(targetPath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
     // Video byte-range streaming support
     if (ext === '.mp4' || ext === '.webm') {
       const range = req.headers.range;
-      const fileSize = stats.size;
+      const fileSize = targetStats.size;
 
       if (range) {
         const parts = range.replace(/bytes=/, '').split('-');
         const start = parseInt(parts[0], 10);
         const end = parts[1] ? parseInt(parts[1], 10) : fileSize - 1;
         const chunksize = end - start + 1;
-        const file = fs.createReadStream(safePath, { start, end });
+        const file = fs.createReadStream(targetPath, { start, end });
         res.writeHead(206, {
           'Content-Range': `bytes ${start}-${end}/${fileSize}`,
           'Accept-Ranges': 'bytes',
@@ -738,7 +750,7 @@ async function handleRequest(req, res) {
           'Content-Type': contentType,
           'Accept-Ranges': 'bytes'
         });
-        fs.createReadStream(safePath).pipe(res);
+        fs.createReadStream(targetPath).pipe(res);
       }
       return;
     }
@@ -746,13 +758,13 @@ async function handleRequest(req, res) {
     // Standard file response with strict anti-cache headers so edits load instantly
     res.writeHead(200, {
       'Content-Type': contentType,
-      'Content-Length': stats.size,
+      'Content-Length': targetStats.size,
       'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
       'Pragma': 'no-cache',
       'Expires': '0',
       'Surrogate-Control': 'no-store'
     });
-    fs.createReadStream(safePath).pipe(res);
+    fs.createReadStream(targetPath).pipe(res);
   });
 }
 
