@@ -3,20 +3,6 @@
   "framework": null,
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.deedoxstudio.com"
-        }
-      ],
-      "destination": "https://deedoxstudio.com/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
