@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- 1. Homepage -->
+  <url>
+    <loc>https://deedoxstudio.com/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/c075rrsz/video/upload/so_2.5,f_jpg,q_auto,w_1200,h_630,c_fill,g_center/v1792567785/fantasy_studio/videos/01_hero_desktop.jpg</image:loc>
+      <image:title>Deedox Studio — Premier Web Development, SaaS and AI Agency</image:title>
+    </image:image>
+  </url>
+
+  <!-- 2. Primary Core Service: Website Development -->
+  <url>
+    <loc>https://deedoxstudio.com/services/website-development</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/c075rrsz/video/upload/so_2.5,f_jpg,q_auto,w_1200,h_630,c_fill,g_center/v1792567785/fantasy_studio/videos/01_hero_desktop.jpg</image:loc>
+      <image:title>Custom Website Development Agency Bangladesh — Deedox Studio</image:title>
+    </image:image>
+  </url>
+
+  <!-- 3. Core Product Page: SaaS Product Development -->
+  <url>
+    <loc>https://deedoxstudio.com/services/saas-development</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/c075rrsz/video/upload/so_2.5,f_jpg,q_auto,w_1200,h_630,c_fill,g_center/v1792567785/fantasy_studio/videos/01_hero_desktop.jpg</image:loc>
+      <image:title>Custom SaaS Product &amp; Cloud ERP Development — Deedox Studio</image:title>
+    </image:image>
+  </url>
+
+  <!-- 4. Core Product Page: App Development -->
+  <url>
+    <loc>https://deedoxstudio.com/services/app-development</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/c075rrsz/video/upload/so_2.5,f_jpg,q_auto,w_1200,h_630,c_fill,g_center/v1792567785/fantasy_studio/videos/01_hero_desktop.jpg</image:loc>
+      <image:title>Mobile &amp; Web App Development (iOS &amp; Android) — Deedox Studio</image:title>
+    </image:image>
+  </url>
+
+  <!-- 5. Sub-Product: AI Automation & Chatbots -->
+  <url>
+    <loc>https://deedoxstudio.com/services/ai-automation-chatbots</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/c075rrsz/video/upload/so_2.5,f_jpg,q_auto,w_1200,h_630,c_fill,g_center/v1792567785/fantasy_studio/videos/01_hero_desktop.jpg</image:loc>
+      <image:title>AI Automation &amp; Intelligent Chatbot Systems — Deedox Studio</image:title>
+    </image:image>
+  </url>
+
+  <!-- 6. Sub-Product: AI Video & Ads Design -->
+  <url>
+    <loc>https://deedoxstudio.com/services/ai-video-ads-design</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/c075rrsz/video/upload/so_2.5,f_jpg,q_auto,w_1200,h_630,c_fill,g_center/v1792567785/fantasy_studio/videos/01_hero_desktop.jpg</image:loc>
+      <image:title>Cinematic AI Video, Ads Creation &amp; Graphic Design — Deedox Studio</image:title>
+    </image:image>
+  </url>
+
+  <!-- 7. Portfolio & Case Studies -->
+  <url>
+    <loc>https://deedoxstudio.com/portfolio</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 8. Services Overview Hub -->
+  <url>
+    <loc>https://deedoxstudio.com/services</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 9. Pricing & Matrix -->
+  <url>
+    <loc>https://deedoxstudio.com/pricing</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 10. About Agency -->
+  <url>
+    <loc>https://deedoxstudio.com/about</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 11. Contact & Discovery -->
+  <url>
+    <loc>https://deedoxstudio.com/contact</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,443 @@
+{
+  "sections": [
+    {
+      "section_id": "global_seo_and_branding",
+      "section_name_bn": "গ্লোবাল ব্র্যান্ডিং, ফেভিকন এবং এসইও (SEO & Favicon)",
+      "section_name_en": "Global Branding, Favicon & OpenGraph",
+      "description": "ওয়েবসাইট মেটা ট্যাগ, বুকমার্ক আইকন এবং সোশ্যাল শেয়ারিং এর জন্য ব্যবহৃত ইমেজ।",
+      "items": [
+        {
+          "name": "DEEDOX Favicon",
+          "type": "image/svg+xml",
+          "role": "Browser Tab Favicon & Bookmark",
+          "url": "https://www.datocms-assets.com/157026/1751297566-deedox-favicon.svg",
+          "copy_code": "<link rel=\"icon\" type=\"image/svg+xml\" href=\"https://www.datocms-assets.com/157026/1751297566-deedox-favicon.svg\">"
+        },
+        {
+          "name": "Intelligent Experiences (OG Social Image)",
+          "type": "image/jpeg",
+          "role": "Social Share OpenGraph (Facebook, Twitter, LinkedIn Preview)",
+          "dimensions": "1200x630 (approx)",
+          "url": "https://www.datocms-assets.com/157026/1753982207-intelligent-experiences-deedox.jpg",
+          "copy_code": "<meta property=\"og:image\" content=\"https://www.datocms-assets.com/157026/1753982207-intelligent-experiences-deedox.jpg\">\n<img src=\"https://www.datocms-assets.com/157026/1753982207-intelligent-experiences-deedox.jpg\" alt=\"Intelligent Experiences by DEEDOX\">"
+        }
+      ]
+    },
+    {
+      "section_id": "hero_top_sizzle",
+      "section_name_bn": "হিরো পেজ / টপ শোকেস ব্যানার (Hero Page)",
+      "section_name_en": "Hero Section — Top Studio Reel",
+      "description": "ওয়েবসাইটের একেবারে শুরুতে ফুল-স্ক্রিন মোশন হিসেবে অটোপ্লে হওয়া প্রধান ফ্যান্টাসি স্টুডিও রিল।",
+      "heading": "Lead by Design",
+      "items": [
+        {
+          "name": "DEEDOX 2026 Studio Sizzle Reel (Desktop)",
+          "type": "video/mp4",
+          "role": "Hero Background Video (Desktop Viewport)",
+          "dimensions": "1920x1080 (16:9)",
+          "high_url": "https://stream.mux.com/WAl7GG5G5q1fu7YpfhLJGqp7X98jbmiu/high.mp4",
+          "medium_url": "https://stream.mux.com/WAl7GG5G5q1fu7YpfhLJGqp7X98jbmiu/medium.mp4",
+          "low_url": "https://stream.mux.com/WAl7GG5G5q1fu7YpfhLJGqp7X98jbmiu/low.mp4",
+          "poster_url": "https://image.mux.com/WAl7GG5G5q1fu7YpfhLJGqp7X98jbmiu/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/WAl7GG5G5q1fu7YpfhLJGqp7X98jbmiu/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/WAl7GG5G5q1fu7YpfhLJGqp7X98jbmiu/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "DEEDOX 2026 Studio Sizzle Reel (Mobile)",
+          "type": "video/mp4",
+          "role": "Hero Background Video (Mobile Viewport)",
+          "dimensions": "860x1864 (Vertical / 9:19)",
+          "high_url": "https://stream.mux.com/JMRwu1NCKyKZzaEHzWfZm1OsB02m6ut5r/high.mp4",
+          "medium_url": "https://stream.mux.com/JMRwu1NCKyKZzaEHzWfZm1OsB02m6ut5r/medium.mp4",
+          "low_url": "https://stream.mux.com/JMRwu1NCKyKZzaEHzWfZm1OsB02m6ut5r/low.mp4",
+          "poster_url": "https://image.mux.com/JMRwu1NCKyKZzaEHzWfZm1OsB02m6ut5r/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/JMRwu1NCKyKZzaEHzWfZm1OsB02m6ut5r/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/JMRwu1NCKyKZzaEHzWfZm1OsB02m6ut5r/high.mp4\" type=\"video/mp4\">\n</video>"
+        }
+      ]
+    },
+    {
+      "section_id": "client_brand_logos",
+      "section_name_bn": "ক্লায়েন্ট পার্টনার লোগো সেকশন (Client Logos Reel)",
+      "section_name_en": "Headline & Client Brand Logos Video",
+      "description": "‘DEEDOX designs and builds digital products...’ হেডিং এর নিচে ক্লায়েন্ট লোগো (Google, Netflix, Spotify ইত্যাদি) এর অ্যানিমেটেড ভিডিও মোশন।",
+      "heading": "DEEDOX designs and builds digital products, brand experiences, and intelligent systems.",
+      "items": [
+        {
+          "name": "DEEDOX client logos",
+          "type": "video/mp4",
+          "role": "Client Partners Animated Ribbon",
+          "dimensions": "1100x514",
+          "high_url": "https://stream.mux.com/AEYNxs00zwkuX9JEh4CG5ipSi9au35c02O/medium.mp4",
+          "medium_url": "https://stream.mux.com/AEYNxs00zwkuX9JEh4CG5ipSi9au35c02O/medium.mp4",
+          "low_url": "https://stream.mux.com/AEYNxs00zwkuX9JEh4CG5ipSi9au35c02O/low.mp4",
+          "poster_url": "https://image.mux.com/AEYNxs00zwkuX9JEh4CG5ipSi9au35c02O/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/AEYNxs00zwkuX9JEh4CG5ipSi9au35c02O/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/AEYNxs00zwkuX9JEh4CG5ipSi9au35c02O/medium.mp4\" type=\"video/mp4\">\n</video>"
+        }
+      ]
+    },
+    {
+      "section_id": "gallery_grid_work",
+      "section_name_bn": "ওয়ার্ক শোকেস ও মাল্টি-কলাম গ্রিড (Work Showcase Gallery Grid)",
+      "section_name_en": "Multi-Column Product & Device Grid",
+      "description": "‘We partner with ambitious companies...’ সেকশনে বড় ফিচার ভিডিও এবং ৩টি কলামে সাজানো বিভিন্ন ডিজিটাল ডিভাইস ও প্রোডাক্ট ভিডিও।",
+      "heading": "We partner with ambitious companies to turn ideas into impact.",
+      "items": [
+        {
+          "name": "Amper AI Platform / Big Highlight Reel",
+          "type": "video/mp4",
+          "role": "Large Full-Width Featured Project Video",
+          "dimensions": "1920x1080",
+          "high_url": "https://stream.mux.com/01Ruy6GLz01Z3MQAS7WiRe4nldO8uANCSu/high.mp4",
+          "medium_url": "https://stream.mux.com/01Ruy6GLz01Z3MQAS7WiRe4nldO8uANCSu/medium.mp4",
+          "low_url": "https://stream.mux.com/01Ruy6GLz01Z3MQAS7WiRe4nldO8uANCSu/low.mp4",
+          "poster_url": "https://image.mux.com/01Ruy6GLz01Z3MQAS7WiRe4nldO8uANCSu/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/01Ruy6GLz01Z3MQAS7WiRe4nldO8uANCSu/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/01Ruy6GLz01Z3MQAS7WiRe4nldO8uANCSu/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Home Watch 1 (Column 1, Card 1)",
+          "type": "video/mp4",
+          "role": "Grid Column 1 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/YXF46g02XKwxe7QQNNfNcAfzC7udbxLfN/high.mp4",
+          "medium_url": "https://stream.mux.com/YXF46g02XKwxe7QQNNfNcAfzC7udbxLfN/medium.mp4",
+          "low_url": "https://stream.mux.com/YXF46g02XKwxe7QQNNfNcAfzC7udbxLfN/low.mp4",
+          "poster_url": "https://image.mux.com/YXF46g02XKwxe7QQNNfNcAfzC7udbxLfN/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1748015594-home_watch-1.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/YXF46g02XKwxe7QQNNfNcAfzC7udbxLfN/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/YXF46g02XKwxe7QQNNfNcAfzC7udbxLfN/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Home Ipad Left 1 (Column 1, Card 2)",
+          "type": "video/mp4",
+          "role": "Grid Column 1 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/6E1ru5UoZfWYnFBffKxu1PpckbMd00aoQ/high.mp4",
+          "medium_url": "https://stream.mux.com/6E1ru5UoZfWYnFBffKxu1PpckbMd00aoQ/medium.mp4",
+          "low_url": "https://stream.mux.com/6E1ru5UoZfWYnFBffKxu1PpckbMd00aoQ/low.mp4",
+          "poster_url": "https://image.mux.com/6E1ru5UoZfWYnFBffKxu1PpckbMd00aoQ/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1747851412-home_ipad_left_1.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/6E1ru5UoZfWYnFBffKxu1PpckbMd00aoQ/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/6E1ru5UoZfWYnFBffKxu1PpckbMd00aoQ/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Home Room (Column 1, Card 3)",
+          "type": "video/mp4",
+          "role": "Grid Column 1 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/ITppDOn00woiNWvh00eWy5jr9eaKyuqO6x/high.mp4",
+          "medium_url": "https://stream.mux.com/ITppDOn00woiNWvh00eWy5jr9eaKyuqO6x/medium.mp4",
+          "low_url": "https://stream.mux.com/ITppDOn00woiNWvh00eWy5jr9eaKyuqO6x/low.mp4",
+          "poster_url": "https://image.mux.com/ITppDOn00woiNWvh00eWy5jr9eaKyuqO6x/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1750780622-home-room.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/ITppDOn00woiNWvh00eWy5jr9eaKyuqO6x/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/ITppDOn00woiNWvh00eWy5jr9eaKyuqO6x/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Home Os (Column 2, Card 1)",
+          "type": "video/mp4",
+          "role": "Grid Column 2 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/DKRFWE7xYaff00cKqX81EK6GIqGPNVdfH/high.mp4",
+          "medium_url": "https://stream.mux.com/DKRFWE7xYaff00cKqX81EK6GIqGPNVdfH/medium.mp4",
+          "low_url": "https://stream.mux.com/DKRFWE7xYaff00cKqX81EK6GIqGPNVdfH/low.mp4",
+          "poster_url": "https://image.mux.com/DKRFWE7xYaff00cKqX81EK6GIqGPNVdfH/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1750781567-home-os.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/DKRFWE7xYaff00cKqX81EK6GIqGPNVdfH/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/DKRFWE7xYaff00cKqX81EK6GIqGPNVdfH/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "DEEDOX site video — c2v2 (Column 2, Card 2)",
+          "type": "video/mp4",
+          "role": "Grid Column 2 Showcase Video",
+          "dimensions": "1920x1080",
+          "high_url": "https://stream.mux.com/f02D5glc65LPWnibAAEYRE8QvatTZalmt/high.mp4",
+          "medium_url": "https://stream.mux.com/f02D5glc65LPWnibAAEYRE8QvatTZalmt/medium.mp4",
+          "low_url": "https://stream.mux.com/f02D5glc65LPWnibAAEYRE8QvatTZalmt/low.mp4",
+          "poster_url": "https://image.mux.com/f02D5glc65LPWnibAAEYRE8QvatTZalmt/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1745862240-c2v2.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/f02D5glc65LPWnibAAEYRE8QvatTZalmt/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/f02D5glc65LPWnibAAEYRE8QvatTZalmt/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Home Car (Column 2, Card 3)",
+          "type": "video/mp4",
+          "role": "Grid Column 2 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/gvggG00aX4QzizThvib8Z3p4FE69Afohb/high.mp4",
+          "medium_url": "https://stream.mux.com/gvggG00aX4QzizThvib8Z3p4FE69Afohb/medium.mp4",
+          "low_url": "https://stream.mux.com/gvggG00aX4QzizThvib8Z3p4FE69Afohb/low.mp4",
+          "poster_url": "https://image.mux.com/gvggG00aX4QzizThvib8Z3p4FE69Afohb/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1750780655-home-car.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/gvggG00aX4QzizThvib8Z3p4FE69Afohb/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/gvggG00aX4QzizThvib8Z3p4FE69Afohb/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "DEEDOX Homepage — homepod (Column 3, Card 1)",
+          "type": "video/mp4",
+          "role": "Grid Column 3 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/jVLjzpVMPq02uA00zXqh00173RPGauCQFMA/high.mp4",
+          "medium_url": "https://stream.mux.com/jVLjzpVMPq02uA00zXqh00173RPGauCQFMA/medium.mp4",
+          "low_url": "https://stream.mux.com/jVLjzpVMPq02uA00zXqh00173RPGauCQFMA/low.mp4",
+          "poster_url": "https://image.mux.com/jVLjzpVMPq02uA00zXqh00173RPGauCQFMA/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1782928767-deedox-homepage-homepod.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/jVLjzpVMPq02uA00zXqh00173RPGauCQFMA/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/jVLjzpVMPq02uA00zXqh00173RPGauCQFMA/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Home Ipad Right (Column 3, Card 2)",
+          "type": "video/mp4",
+          "role": "Grid Column 3 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/dduhl2EpsmR8fLo50214abfgEZy7oFj021/high.mp4",
+          "medium_url": "https://stream.mux.com/dduhl2EpsmR8fLo50214abfgEZy7oFj021/medium.mp4",
+          "low_url": "https://stream.mux.com/dduhl2EpsmR8fLo50214abfgEZy7oFj021/low.mp4",
+          "poster_url": "https://image.mux.com/dduhl2EpsmR8fLo50214abfgEZy7oFj021/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1747851483-home_ipad_right.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/dduhl2EpsmR8fLo50214abfgEZy7oFj021/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/dduhl2EpsmR8fLo50214abfgEZy7oFj021/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Home Masterclass (Column 3, Card 3)",
+          "type": "video/mp4",
+          "role": "Grid Column 3 Showcase Video",
+          "dimensions": "778x1000",
+          "high_url": "https://stream.mux.com/t009sBnyiws01s4D3YBrFBoZKI701V01BTs7/high.mp4",
+          "medium_url": "https://stream.mux.com/t009sBnyiws01s4D3YBrFBoZKI701V01BTs7/medium.mp4",
+          "low_url": "https://stream.mux.com/t009sBnyiws01s4D3YBrFBoZKI701V01BTs7/low.mp4",
+          "poster_url": "https://image.mux.com/t009sBnyiws01s4D3YBrFBoZKI701V01BTs7/thumbnail.jpg",
+          "datocms_fallback": "https://www.datocms-assets.com/157026/1750780983-home-masterclass.mp4?auto=format&fit=max&h=800&q=95&w=800",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/t009sBnyiws01s4D3YBrFBoZKI701V01BTs7/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/t009sBnyiws01s4D3YBrFBoZKI701V01BTs7/high.mp4\" type=\"video/mp4\">\n</video>"
+        }
+      ]
+    },
+    {
+      "section_id": "ai_transformation_intro",
+      "section_name_bn": "এআই ট্রান্সফরমেশন ব্যানার (AI Transformation Feature)",
+      "section_name_en": "Headline Intro & Motion Banner",
+      "description": "‘As technology radically changes our world...’ সেকশনের সাথে ব্যবহৃত সিনেমেটিক 3D মোশন ভিডিও।",
+      "heading": "As technology radically changes our world, we help our clients adapt and accelerate.",
+      "items": [
+        {
+          "name": "DEEDOX Acceleration & Transformation Motion Reel",
+          "type": "video/mp4",
+          "role": "Section Visual Anchor Video",
+          "dimensions": "1728x1046",
+          "high_url": "https://stream.mux.com/xuOYmWxn7Nqsb4rD02su9hd1ydu17m9AQ/high.mp4",
+          "medium_url": "https://stream.mux.com/xuOYmWxn7Nqsb4rD02su9hd1ydu17m9AQ/medium.mp4",
+          "low_url": "https://stream.mux.com/xuOYmWxn7Nqsb4rD02su9hd1ydu17m9AQ/low.mp4",
+          "poster_url": "https://image.mux.com/xuOYmWxn7Nqsb4rD02su9hd1ydu17m9AQ/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/xuOYmWxn7Nqsb4rD02su9hd1ydu17m9AQ/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/xuOYmWxn7Nqsb4rD02su9hd1ydu17m9AQ/high.mp4\" type=\"video/mp4\">\n</video>"
+        }
+      ]
+    },
+    {
+      "section_id": "core_pillars_and_casestudies",
+      "section_name_bn": "৪টি প্রধান পিলার ও কেস স্টাডি কার্ড (Core Capabilities & Featured Case Studies)",
+      "section_name_en": "Interactive Service Pillars & LIV Golf Showcase",
+      "description": "ইন্টেলিজেন্ট সিস্টেমস, ডিজিটাল প্রোডাক্টস, ব্র্যান্ড এক্সপেরিয়েন্স এবং LIV Golf এর জন্য তৈরি ৪টি ইন্টারঅ্যাক্টিভ ভিডিও কার্ড।",
+      "items": [
+        {
+          "name": "Intelligent  Systems (Desktop Showcase)",
+          "type": "video/mp4",
+          "role": "Pillar #1 Desktop Video",
+          "high_url": "https://stream.mux.com/iiq02dlxysCWAN0202QszfKoQ02URXI5lYo01/high.mp4",
+          "medium_url": "https://stream.mux.com/iiq02dlxysCWAN0202QszfKoQ02URXI5lYo01/medium.mp4",
+          "low_url": "https://stream.mux.com/iiq02dlxysCWAN0202QszfKoQ02URXI5lYo01/low.mp4",
+          "poster_url": "https://image.mux.com/iiq02dlxysCWAN0202QszfKoQ02URXI5lYo01/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/iiq02dlxysCWAN0202QszfKoQ02URXI5lYo01/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/iiq02dlxysCWAN0202QszfKoQ02URXI5lYo01/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Intelligent  Systems (Mobile Responsive Card)",
+          "type": "video/mp4",
+          "role": "Pillar #1 Mobile Video",
+          "high_url": "https://stream.mux.com/4n8I01Zu7XlUA5m97MEUJsP2wikPLwoaC/high.mp4",
+          "medium_url": "https://stream.mux.com/4n8I01Zu7XlUA5m97MEUJsP2wikPLwoaC/medium.mp4",
+          "low_url": "https://stream.mux.com/4n8I01Zu7XlUA5m97MEUJsP2wikPLwoaC/low.mp4",
+          "poster_url": "https://image.mux.com/4n8I01Zu7XlUA5m97MEUJsP2wikPLwoaC/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/4n8I01Zu7XlUA5m97MEUJsP2wikPLwoaC/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/4n8I01Zu7XlUA5m97MEUJsP2wikPLwoaC/medium.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Digital  Products (Desktop Showcase)",
+          "type": "video/mp4",
+          "role": "Pillar #2 Desktop Video",
+          "high_url": "https://stream.mux.com/Hj7XzvT68mUk0000zhSyGa6rSTBKcvZkDi/high.mp4",
+          "medium_url": "https://stream.mux.com/Hj7XzvT68mUk0000zhSyGa6rSTBKcvZkDi/medium.mp4",
+          "low_url": "https://stream.mux.com/Hj7XzvT68mUk0000zhSyGa6rSTBKcvZkDi/low.mp4",
+          "poster_url": "https://image.mux.com/Hj7XzvT68mUk0000zhSyGa6rSTBKcvZkDi/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/Hj7XzvT68mUk0000zhSyGa6rSTBKcvZkDi/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/Hj7XzvT68mUk0000zhSyGa6rSTBKcvZkDi/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Digital  Products (Mobile Responsive Card)",
+          "type": "video/mp4",
+          "role": "Pillar #2 Mobile Video",
+          "high_url": "https://stream.mux.com/7hsnnwjcfqh02vkXvENfgCIxo00IWV5m00g/medium.mp4",
+          "medium_url": "https://stream.mux.com/7hsnnwjcfqh02vkXvENfgCIxo00IWV5m00g/medium.mp4",
+          "low_url": "https://stream.mux.com/7hsnnwjcfqh02vkXvENfgCIxo00IWV5m00g/low.mp4",
+          "poster_url": "https://image.mux.com/7hsnnwjcfqh02vkXvENfgCIxo00IWV5m00g/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/7hsnnwjcfqh02vkXvENfgCIxo00IWV5m00g/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/7hsnnwjcfqh02vkXvENfgCIxo00IWV5m00g/medium.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Brand  Experiences (Desktop Showcase)",
+          "type": "video/mp4",
+          "role": "Pillar #3 Desktop Video",
+          "high_url": "https://stream.mux.com/q1WZSC9gURnjx7T6ca7GiuOauE2PLTWV/high.mp4",
+          "medium_url": "https://stream.mux.com/q1WZSC9gURnjx7T6ca7GiuOauE2PLTWV/medium.mp4",
+          "low_url": "https://stream.mux.com/q1WZSC9gURnjx7T6ca7GiuOauE2PLTWV/low.mp4",
+          "poster_url": "https://image.mux.com/q1WZSC9gURnjx7T6ca7GiuOauE2PLTWV/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/q1WZSC9gURnjx7T6ca7GiuOauE2PLTWV/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/q1WZSC9gURnjx7T6ca7GiuOauE2PLTWV/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Brand  Experiences (Mobile Responsive Card)",
+          "type": "video/mp4",
+          "role": "Pillar #3 Mobile Video",
+          "high_url": "https://stream.mux.com/5LYaktaq4YVgAoAZZbXpNAgxnwzII7sd/medium.mp4",
+          "medium_url": "https://stream.mux.com/5LYaktaq4YVgAoAZZbXpNAgxnwzII7sd/medium.mp4",
+          "low_url": "https://stream.mux.com/5LYaktaq4YVgAoAZZbXpNAgxnwzII7sd/low.mp4",
+          "poster_url": "https://image.mux.com/5LYaktaq4YVgAoAZZbXpNAgxnwzII7sd/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/5LYaktaq4YVgAoAZZbXpNAgxnwzII7sd/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/5LYaktaq4YVgAoAZZbXpNAgxnwzII7sd/medium.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "LIV Golf (Desktop Showcase)",
+          "type": "video/mp4",
+          "role": "Pillar #4 Desktop Video",
+          "high_url": "https://stream.mux.com/S2n7Vqwh6CUX2mTrd15ZiH9fYS4jKVB7/high.mp4",
+          "medium_url": "https://stream.mux.com/S2n7Vqwh6CUX2mTrd15ZiH9fYS4jKVB7/medium.mp4",
+          "low_url": "https://stream.mux.com/S2n7Vqwh6CUX2mTrd15ZiH9fYS4jKVB7/low.mp4",
+          "poster_url": "https://image.mux.com/S2n7Vqwh6CUX2mTrd15ZiH9fYS4jKVB7/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/S2n7Vqwh6CUX2mTrd15ZiH9fYS4jKVB7/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/S2n7Vqwh6CUX2mTrd15ZiH9fYS4jKVB7/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "LIV Golf (Mobile Responsive Card)",
+          "type": "video/mp4",
+          "role": "Pillar #4 Mobile Video",
+          "high_url": "https://stream.mux.com/MwmS5VaYm6cARJ02cBXjaXS74Tb9bnqoV/high.mp4",
+          "medium_url": "https://stream.mux.com/MwmS5VaYm6cARJ02cBXjaXS74Tb9bnqoV/medium.mp4",
+          "low_url": "https://stream.mux.com/MwmS5VaYm6cARJ02cBXjaXS74Tb9bnqoV/low.mp4",
+          "poster_url": "https://image.mux.com/MwmS5VaYm6cARJ02cBXjaXS74Tb9bnqoV/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/MwmS5VaYm6cARJ02cBXjaXS74Tb9bnqoV/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/MwmS5VaYm6cARJ02cBXjaXS74Tb9bnqoV/medium.mp4\" type=\"video/mp4\">\n</video>"
+        }
+      ]
+    },
+    {
+      "section_id": "twentyfive_years_carousel",
+      "section_name_bn": "২৫ বছরের ইনোভেশন ও ফ্ল্যাগশিপ অ্যাপ লঞ্চ ক্যারোজেল (25-Year Innovation Carousel)",
+      "section_name_en": "Flagship Apps Launch Carousel (Harrods, Royal Caribbean, Weather)",
+      "description": "‘For 25 years, we’ve helped our partners win...’ সেকশনের হারডস (Harrods), রয়্যাল ক্যারিবিয়ান (Royal Caribbean) এবং দ্য ওয়েদার চ্যানেল অ্যাপের সেন্ট্রাল ক্যারোজেল।",
+      "heading": "For 25 years, we've helped our partners win their place in the hands, homes, and hearts of millions...",
+      "items": [
+        {
+          "name": "Homepage Launch Carousel — Harrods, Royal Caribbean & Weather (Desktop)",
+          "type": "video/mp4",
+          "role": "25 Years Showcase Device Frame Carousel",
+          "dimensions": "1100x1080",
+          "high_url": "https://stream.mux.com/KaU01VuauByeOREUJP33QUCc00WwaaMBvQ/high.mp4",
+          "medium_url": "https://stream.mux.com/KaU01VuauByeOREUJP33QUCc00WwaaMBvQ/medium.mp4",
+          "low_url": "https://stream.mux.com/KaU01VuauByeOREUJP33QUCc00WwaaMBvQ/low.mp4",
+          "poster_url": "https://image.mux.com/KaU01VuauByeOREUJP33QUCc00WwaaMBvQ/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/KaU01VuauByeOREUJP33QUCc00WwaaMBvQ/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/KaU01VuauByeOREUJP33QUCc00WwaaMBvQ/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Homepage Launch Carousel (Mobile)",
+          "type": "video/mp4",
+          "role": "Mobile Launch Carousel",
+          "dimensions": "Vertical Mobile Carousel",
+          "high_url": "https://stream.mux.com/myY2D7lTsUKhD8PIGxg7OTU00hpi8TU9q/medium.mp4",
+          "medium_url": "https://stream.mux.com/myY2D7lTsUKhD8PIGxg7OTU00hpi8TU9q/medium.mp4",
+          "low_url": "https://stream.mux.com/myY2D7lTsUKhD8PIGxg7OTU00hpi8TU9q/low.mp4",
+          "poster_url": "https://image.mux.com/myY2D7lTsUKhD8PIGxg7OTU00hpi8TU9q/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/myY2D7lTsUKhD8PIGxg7OTU00hpi8TU9q/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/myY2D7lTsUKhD8PIGxg7OTU00hpi8TU9q/medium.mp4\" type=\"video/mp4\">\n</video>"
+        }
+      ]
+    },
+    {
+      "section_id": "storytelling_vimeo_kohler",
+      "section_name_bn": "ফিউচার ভিজন ও ব্র্যান্ড ট্রান্সফরমেশন (Vimeo Brand Refresh & Kohler Mockup)",
+      "section_name_en": "Storytelling Block — Envision Tomorrow & Launch Today",
+      "description": "‘The creative company chosen by leaders to envision tomorrow...’ সেকশনে ব্যবহৃত ভিমিও (Vimeo) এবং কোহলার (Kohler) এর হাই-রেজোলিউশন প্রোডাক্ট রেন্ডার।",
+      "heading": "The creative company chosen by leaders to envision tomorrow and launch it today.",
+      "items": [
+        {
+          "name": "Vimeo Brand Refresh — Hero Showcase",
+          "type": "video/mp4",
+          "role": "Featured Brand Story Showcase Video",
+          "dimensions": "1728x1046",
+          "high_url": "https://stream.mux.com/O00UX5d02JL5WQnyi5x2PCBuiVLcRQdN9W/high.mp4",
+          "medium_url": "https://stream.mux.com/O00UX5d02JL5WQnyi5x2PCBuiVLcRQdN9W/medium.mp4",
+          "low_url": "https://stream.mux.com/O00UX5d02JL5WQnyi5x2PCBuiVLcRQdN9W/low.mp4",
+          "poster_url": "https://image.mux.com/O00UX5d02JL5WQnyi5x2PCBuiVLcRQdN9W/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/O00UX5d02JL5WQnyi5x2PCBuiVLcRQdN9W/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/O00UX5d02JL5WQnyi5x2PCBuiVLcRQdN9W/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Kohler Interactive Laptop Mockup Experience",
+          "type": "video/mp4",
+          "role": "Laptop Hardware Mockup & Web Experience",
+          "dimensions": "568x740",
+          "high_url": "https://stream.mux.com/Nntk02mWj6sFCB7vZJnLsc5xVEuALOBmI/high.mp4",
+          "medium_url": "https://stream.mux.com/Nntk02mWj6sFCB7vZJnLsc5xVEuALOBmI/medium.mp4",
+          "low_url": "https://stream.mux.com/Nntk02mWj6sFCB7vZJnLsc5xVEuALOBmI/low.mp4",
+          "poster_url": "https://image.mux.com/Nntk02mWj6sFCB7vZJnLsc5xVEuALOBmI/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/Nntk02mWj6sFCB7vZJnLsc5xVEuALOBmI/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/Nntk02mWj6sFCB7vZJnLsc5xVEuALOBmI/high.mp4\" type=\"video/mp4\">\n</video>"
+        },
+        {
+          "name": "Design & Innovation Sizzle Reel 3",
+          "type": "video/mp4",
+          "role": "Full-bleed Background Transition Reel",
+          "dimensions": "1920x1080",
+          "high_url": "https://stream.mux.com/L9t5aENtwbzMguK0077TmYSC2zCLJPlmu/high.mp4",
+          "medium_url": "https://stream.mux.com/L9t5aENtwbzMguK0077TmYSC2zCLJPlmu/medium.mp4",
+          "low_url": "https://stream.mux.com/L9t5aENtwbzMguK0077TmYSC2zCLJPlmu/low.mp4",
+          "poster_url": "https://image.mux.com/L9t5aENtwbzMguK0077TmYSC2zCLJPlmu/thumbnail.jpg",
+          "copy_code": "<video autoplay muted loop playsinline poster=\"https://image.mux.com/L9t5aENtwbzMguK0077TmYSC2zCLJPlmu/thumbnail.jpg\">\n  <source src=\"https://stream.mux.com/L9t5aENtwbzMguK0077TmYSC2zCLJPlmu/high.mp4\" type=\"video/mp4\">\n</video>"
+        }
+      ]
+    },
+    {
+      "section_id": "insights_and_editorial_images",
+      "section_name_bn": "ইনসাইটস, থট লিডারশিপ ও এডিটোরিয়াল আর্টিকেল ইমেজেস (Articles & Insights Images)",
+      "section_name_en": "Editorial Cards, Essays & Keynotes High-Res Images",
+      "description": "ফ্যান্টাসির থট লিডারশিপ, আর্টিকেল, প্রেস ও স্পিচ কভারের জন্য ব্যবহৃত অফিশিয়াল হাই-রেজোলিউশন ইমেজসমূহ।",
+      "items": [
+        {
+          "name": "Prototype Built On A Real Foundation (Glass Ring & Light Pulse)",
+          "type": "image/png",
+          "role": "Article Cover — AI Prototyping & Real Systems",
+          "dimensions": "2880x2880 (High-DPI Retina)",
+          "url": "https://www.datocms-assets.com/157026/1792003227-prototype-built-on-a-real-foundation-glass-ring-and-light-pulse.png?auto=format&fit=max&h=2880&q=95&w=2880",
+          "copy_code": "<img src=\"https://www.datocms-assets.com/157026/1792003227-prototype-built-on-a-real-foundation-glass-ring-and-light-pulse.png?auto=format&fit=max&h=2880&q=95&w=2880\" alt=\"Prototype Built On A Real Foundation\" loading=\"lazy\">"
+        },
+        {
+          "name": "People Are The Proof (Hero Poster)",
+          "type": "image/png",
+          "role": "Agency Philosophy & Team Feature",
+          "dimensions": "1440x1440",
+          "url": "https://www.datocms-assets.com/157026/1787675864-people-are-the-proof-hero-poster.png?auto=format&fit=max&h=1440&q=95&w=1440",
+          "copy_code": "<img src=\"https://www.datocms-assets.com/157026/1787675864-people-are-the-proof-hero-poster.png?auto=format&fit=max&h=1440&q=95&w=1440\" alt=\"People Are The Proof\" loading=\"lazy\">"
+        },
+        {
+          "name": "SXSW Grill Panel 3 (Keynote Panel)",
+          "type": "image/png",
+          "role": "Event / Conference Keynote Image",
+          "dimensions": "2880x2880",
+          "url": "https://www.datocms-assets.com/157026/1774470947-sxsw-grill-panel-3.png?auto=format&fit=max&h=2880&q=95&w=2880",
+          "copy_code": "<img src=\"https://www.datocms-assets.com/157026/1774470947-sxsw-grill-panel-3.png?auto=format&fit=max&h=2880&q=95&w=2880\" alt=\"SXSW Keynote Grill Panel\" loading=\"lazy\">"
+        },
+        {
+          "name": "How We Build — Caroline Hilman",
+          "type": "image/jpeg",
+          "role": "Leadership Profile & Studio Methodology",
+          "dimensions": "2880x2880",
+          "url": "https://www.datocms-assets.com/157026/1787283310-how-we-build-caroline-hilman-image3.jpg?auto=format&fit=max&h=2880&q=95&w=2880",
+          "copy_code": "<img src=\"https://www.datocms-assets.com/157026/1787283310-how-we-build-caroline-hilman-image3.jpg?auto=format&fit=max&h=2880&q=95&w=2880\" alt=\"How We Build - Caroline Hilman\" loading=\"lazy\">"
+        },
+        {
+          "name": "The New Internet: Agent-to-Agent Experiences",
+          "type": "image/jpeg",
+          "role": "AI Research & Future Internet Architecture Essay Cover",
+          "dimensions": "2880x2880",
+          "url": "https://www.datocms-assets.com/157026/1785184300-the-new-internet-agent-to-agent-experiences-og.jpg?auto=format&fit=max&h=2880&q=95&w=2880",
+          "copy_code": "<img src=\"https://www.datocms-assets.com/157026/1785184300-the-new-internet-agent-to-agent-experiences-og.jpg?auto=format&fit=max&h=2880&q=95&w=2880\" alt=\"The New Internet - Agent to Agent Experiences\" loading=\"lazy\">"
+        },
+        {
+          "name": "LBB Online Feature & Press Article Template",
+          "type": "image/png",
+          "role": "Global Press / Editorial Feature Badge",
+          "dimensions": "2880x2880",
+          "url": "https://www.datocms-assets.com/157026/1787874291-lbb-online-article-template.png?auto=format&fit=max&h=2880&q=95&w=2880",
+          "copy_code": "<img src=\"https://www.datocms-assets.com/157026/1787874291-lbb-online-article-template.png?auto=format&fit=max&h=2880&q=95&w=2880\" alt=\"LBB Online Article\" loading=\"lazy\">"
+        }
+      ]
+    }
+  ]
+}

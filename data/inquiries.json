@@ -1,0 +1,33 @@
+[
+  {
+    "id": "inq-1792868487530",
+    "created_at": "2026-10-24T19:01:27.530Z",
+    "name": "alert(&quot;xss&quot;)Test User",
+    "email": "test@deedox.studio",
+    "url": "",
+    "budget": "$25,000 – $50,000",
+    "services": "Website & SEO, Hospital Management",
+    "brief": "We need a hospital management ERP and SEO website.",
+    "source": "web_form"
+  },
+  {
+    "id": "inq-1792868399397",
+    "created_at": "2026-10-24T18:59:59.397Z",
+    "name": "<script>alert(\"xss\")</script>Test User",
+    "email": "test@deedox.studio",
+    "brief": "<img src=x onerror=alert(1)>We need a hospital management ERP and SEO website.",
+    "budget": "$25,000 – $50,000",
+    "services": "Website & SEO, Hospital Management"
+  },
+  {
+    "id": "inq-1792748863377",
+    "created_at": "2026-10-23T09:47:43.378Z",
+    "name": "Alex Test",
+    "email": "alex@example.com",
+    "url": "https://example.com",
+    "budget": ",000 – ,000",
+    "services": "Web Applications, Autonomous AI Systems",
+    "brief": "Pre-launch test discovery brief for DEEDOX website.",
+    "source": "contact_page"
+  }
+]

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#a0a0a0"/>
+      <stop offset="100%" stop-color="#404040"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Shield -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="4"/>
+  
+  <!-- Subtle futuristic grid dots -->
+  <circle cx="120" cy="120" r="3" fill="#ffffff" opacity="0.2"/>
+  <circle cx="392" cy="120" r="3" fill="#ffffff" opacity="0.2"/>
+  <circle cx="120" cy="392" r="3" fill="#ffffff" opacity="0.2"/>
+  <circle cx="392" cy="392" r="3" fill="#ffffff" opacity="0.2"/>
+
+  <!-- DEEDOX Iconic Monogram 'D' -->
+  <g transform="translate(136, 126)">
+    <!-- Back Outer Glow Path -->
+    <path d="M 0 0 L 110 0 C 190 0 240 50 240 130 C 240 210 190 260 110 260 L 0 260 Z" fill="none" stroke="url(#glowGrad)" stroke-width="2" opacity="0.4"/>
+    <!-- Main Thick Architectural D -->
+    <path d="M 0 0 L 105 0 C 185 0 232 48 232 130 C 232 212 185 260 105 260 L 0 260 Z" fill="url(#accentGrad)"/>
+    <!-- Inner Cutout -->
+    <path d="M 52 52 L 100 52 C 145 52 176 80 176 130 C 176 180 145 208 100 208 L 52 208 Z" fill="#050507"/>
+    <!-- Glowing Core Accent Dot -->
+    <circle cx="108" cy="130" r="10" fill="#ffffff"/>
+  </g>
+</svg>

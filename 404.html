@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <title>404 — Page Not Found | Deedox Studio</title>
+  <meta name="description" content="The requested page could not be found. Explore Deedox Studio custom website development, SaaS engineering, mobile apps, and AI automation."/>
+  <meta name="robots" content="noindex, follow"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #000000;
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 20px;
+      overflow-x: hidden;
+      position: relative;
+    }
+    .glow-orb {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.05) 50%, transparent 70%);
+      filter: blur(80px);
+      pointer-events: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+    .content-box {
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+      width: 100%;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #a1a1aa;
+      margin-bottom: 24px;
+    }
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef4444;
+      box-shadow: 0 0 10px #ef4444;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 16px;
+      background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.35) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.04em;
+    }
+    h2 {
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 500;
+      color: #e4e4e7;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: #a1a1aa;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+    .quick-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px 18px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .quick-card:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+    .quick-card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .quick-card-desc {
+      font-size: 0.8rem;
+      color: #71717a;
+    }
+    .btn-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: #ffffff;
+      color: #000000;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover {
+      background: #e4e4e7;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: transparent;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-orb"></div>
+  <div class="content-box">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      <span>404 Error • Page Lost In Orbit</span>
+    </div>
+    <h1>404</h1>
+    <h2>This coordinate does not exist.</h2>
+    <p>
+      The link you followed may be broken or the page has been moved. Explore our core digital product services or return to the homepage:
+    </p>
+
+    <div class="quick-links">
+      <a href="/services/website-development" class="quick-card">
+        <div class="quick-card-title">
+          <span>Website Development</span>
+          <span>&rarr;</span>
+        </div>
+        <div class="quick-card-desc">High-speed websites & SEO</div>
+      </a>
+      <a href="/services/saas-development" class="quick-card">
+        <div class="quick-card-title">
+          <span>SaaS Development</span>
+          <span>&rarr;</span>
+        </div>
+        <div class="quick-card-desc">Custom cloud platforms & ERP</div>
+      </a>
+      <a href="/services/app-development" class="quick-card">
+        <div class="quick-card-title">
+          <span>App Development</span>
+          <span>&rarr;</span>
+        </div>
+        <div class="quick-card-desc">iOS, Android & Web apps</div>
+      </a>
+      <a href="/portfolio" class="quick-card">
+        <div class="quick-card-title">
+          <span>Selected Works</span>
+          <span>&rarr;</span>
+        </div>
+        <div class="quick-card-desc">Client case studies</div>
+      </a>
+    </div>
+
+    <div class="btn-row">
+      <a href="/" class="btn-primary">Return to Homepage &rarr;</a>
+      <a href="/contact" class="btn-secondary">Start a Project</a>
+    </div>
+  </div>
+</body>
+</html>

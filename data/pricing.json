@@ -1,0 +1,119 @@
+{
+  "currency": "$",
+  "annual_discount_percentage": 20,
+  "whatsapp": {
+    "phone": "+8801817296013",
+    "preface": "🚀 *NEW INQUIRY FROM DEEDOX STUDIO PRICING* 🚀"
+  },
+  "tiers": [
+    {
+      "id": "starter",
+      "name": "Professional Website & SEO Launch",
+      "tagline": "Core Flagship • High Converting",
+      "badge": "Primary Focus • Website & SEO",
+      "popular": false,
+      "price_monthly": 30,
+      "price_annual": 239,
+      "price_label": "/ Month",
+      "turnaround": "Turnaround: 2-3 Weeks",
+      "description": "Custom-built high-converting website architecture, full on-page & technical SEO setup to rank #1, responsive mobile experience, and speed optimization.",
+      "features": [
+        "Custom Website Design (Authority, Corporate or E-commerce)",
+        "Complete Technical & On-Page SEO Suite to Rank #1",
+        "High-Converting UX/UI with Figma Design System",
+        "Mobile iOS & Android Responsive Layout Optimization",
+        "Lightning-Fast 95+ Core Web Vitals Performance",
+        "Direct WhatsApp & Email Agency Communication",
+        "Weekly Strategy, Design Demo & Milestone Syncs",
+        "100% Client Ownership, Clean Code & Commercial Rights"
+      ]
+    },
+    {
+      "id": "flagship",
+      "name": "Custom SaaS, Software & Apps",
+      "tagline": "Most Popular • Full-Stack Systems",
+      "badge": "Most Popular • Software & SaaS",
+      "popular": true,
+      "price_monthly": 50,
+      "price_annual": 799,
+      "price_label": "/ Month",
+      "turnaround": "Turnaround: Continuous Dedicated",
+      "description": "Bespoke SaaS platform engineering, tailored business management systems (Hospital/Hotel/POS/ERP), cross-platform mobile apps, and dedicated ongoing support.",
+      "features": [
+        "Dedicated Agency Squad: Full-Stack Engineers & UI/UX Architects",
+        "Custom SaaS & Management System (Hospital/Hotel/POS/ERP)",
+        "Cross-Platform Mobile App (iOS & Android) with App Store Deployment",
+        "Custom PC & Desktop Enterprise Software (Windows / Mac)",
+        "Secure Multi-Tenant Cloud Architecture & Real-Time Database",
+        "Payment Gateway & Automated Billing Integration",
+        "Daily Async Updates + 24/7 Priority WhatsApp Hotline",
+        "Continuous Feature Scoping, Security Audits & SLA Guarantee"
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise AI, Media & Automation",
+      "tagline": "Complete Growth Engine",
+      "badge": "Tier 03 • All-in-One Enterprise",
+      "popular": false,
+      "price_monthly": 100,
+      "price_annual": 3999,
+      "price_label": "/ Month",
+      "turnaround": "Turnaround: Dedicated Squad & Custom SLA",
+      "description": "Full-scale agency partnership: custom web & software, AI-generated commercials, high-ROI Meta & Google ads, and 24/7 WhatsApp/Messenger sales automations.",
+      "features": [
+        "Complete Technology & Growth Partnership Across All 4 Pillars",
+        "Full Custom Web, SaaS & Mobile App Ecosystem",
+        "AI Video Production: AI Commercials, Promo Videos & UGC Ads",
+        "High-ROI Digital Advertising: Full Meta & Google Ads Management",
+        "24/7 Sales Automation: WhatsApp & Messenger Bots + CRM Workflows",
+        "Dedicated Executive Director & Account Strategist",
+        "Enterprise NDA, SOC2 Level Security Standards & Custom SLA",
+        "Complete IP Transfer, Full Source Repositories & White-Glove Support"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod-1",
+      "name": "Custom Business Management System (Hospital / Hotel / POS / ERP)",
+      "price": 30,
+      "desc": "Tailor-made cloud software for clinics, hotels, retail shops, inventory control, and enterprise operations."
+    },
+    {
+      "id": "mod-2",
+      "name": "End-to-End iOS & Android Mobile App Development",
+      "price": 1299,
+      "desc": "Cross-platform mobile application with native gestures, real-time push notifications, and payment gateways."
+    },
+    {
+      "id": "mod-3",
+      "name": "AI Video, UGC Commercials & Creative Editing Pack",
+      "price": 899,
+      "desc": "Professional video editing, AI promo videos, high-converting UGC ads, and cinematic brand visuals."
+    },
+    {
+      "id": "mod-4",
+      "name": "24/7 WhatsApp & Messenger Sales Automation & CRM Funnel",
+      "price": 1899,
+      "desc": "Automated lead qualification chatbots, instant response routing, and sales funnel workflows scaling sales 24/7."
+    }
+  ],
+  "addons": [
+    {
+      "id": "addon-1",
+      "name": "Complete Technical & Off-Page SEO Suite",
+      "price": 450
+    },
+    {
+      "id": "addon-2",
+      "name": "High-ROI Meta & Google Ads Campaign Setup",
+      "price": 650
+    },
+    {
+      "id": "addon-3",
+      "name": "PC & Desktop Enterprise Software (Windows / Mac)",
+      "price": 750
+    }
+  ]
+}

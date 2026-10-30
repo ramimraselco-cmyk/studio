@@ -1,0 +1,98 @@
+# ==============================================================================
+# Deedox Studio (https://deedoxstudio.com) — Official Robots.txt
+# High-Performance Search Engine & AI Crawler Directives
+# ==============================================================================
+
+# 1. Googlebot
+User-agent: Googlebot
+Allow: /
+Allow: /services/
+Allow: /portfolio
+Allow: /about
+Allow: /contact
+Allow: /pricing
+Allow: /assets/
+Allow: /images/
+Allow: /_nuxt/
+Disallow: /deedoxahmed7070
+Disallow: /admin
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /data/
+Disallow: /scratch/
+
+# 2. Bingbot
+User-agent: Bingbot
+Allow: /
+Allow: /services/
+Allow: /portfolio
+Allow: /about
+Allow: /contact
+Allow: /pricing
+Allow: /assets/
+Allow: /images/
+Disallow: /deedoxahmed7070
+Disallow: /admin
+Disallow: /api/
+Disallow: /data/
+Disallow: /scratch/
+
+# 3. AI Search & LLM Crawlers (GPTBot, PerplexityBot, ClaudeBot, Applebot)
+User-agent: GPTBot
+Allow: /
+Allow: /services/
+Allow: /portfolio
+Allow: /about
+Allow: /pricing
+Disallow: /deedoxahmed7070
+Disallow: /admin
+Disallow: /api/
+Disallow: /data/
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /services/
+Allow: /portfolio
+Allow: /about
+Disallow: /deedoxahmed7070
+Disallow: /admin
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /services/
+Allow: /portfolio
+Allow: /about
+Disallow: /deedoxahmed7070
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Applebot
+Allow: /
+Allow: /services/
+Allow: /portfolio
+Allow: /about
+Disallow: /deedoxahmed7070
+Disallow: /admin
+Disallow: /api/
+
+# 4. Global Fallback
+User-agent: *
+Allow: /
+Disallow: /deedoxahmed7070
+Disallow: /admin
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /data/
+Disallow: /scratch/
+Disallow: /*.bak$
+Disallow: /*.json$
+
+# Public PWA & Icon Assets
+Allow: /site.webmanifest
+Allow: /favicon.svg
+Allow: /browserconfig.xml
+
+# Canonical XML Sitemap & Host
+Sitemap: https://deedoxstudio.com/sitemap.xml
+Host: https://deedoxstudio.com

@@ -1,0 +1,273 @@
+{
+  "01_hero_desktop.mp4": {
+    "local_path": "/assets/videos/01_hero_desktop.mp4",
+    "public_id": "fantasy_studio/videos/01_hero_desktop",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567785/fantasy_studio/videos/01_hero_desktop.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567785/fantasy_studio/videos/01_hero_desktop.mp4",
+    "duration": 30.0,
+    "format": "mp4",
+    "bytes": 12598359,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567785/fantasy_studio/videos/01_hero_desktop.m3u8"
+  },
+  "02_hero_mobile.mp4": {
+    "local_path": "/assets/videos/02_hero_mobile.mp4",
+    "public_id": "fantasy_studio/videos/02_hero_mobile",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567819/fantasy_studio/videos/02_hero_mobile.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567819/fantasy_studio/videos/02_hero_mobile.mp4",
+    "duration": 29.966666,
+    "format": "mp4",
+    "bytes": 9987694,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567819/fantasy_studio/videos/02_hero_mobile.m3u8"
+  },
+  "03_client_logos.mp4": {
+    "local_path": "/assets/videos/03_client_logos.mp4",
+    "public_id": "fantasy_studio/videos/03_client_logos",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567824/fantasy_studio/videos/03_client_logos.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567824/fantasy_studio/videos/03_client_logos.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 995268,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567824/fantasy_studio/videos/03_client_logos.m3u8"
+  },
+  "04_amper_platform.mp4": {
+    "local_path": "/assets/videos/04_amper_platform.mp4",
+    "public_id": "fantasy_studio/videos/04_amper_platform",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567827/fantasy_studio/videos/04_amper_platform.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567827/fantasy_studio/videos/04_amper_platform.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2301963,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567827/fantasy_studio/videos/04_amper_platform.m3u8"
+  },
+  "05_col1_watch.mp4": {
+    "local_path": "/assets/videos/05_col1_watch.mp4",
+    "public_id": "fantasy_studio/videos/05_col1_watch",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567830/fantasy_studio/videos/05_col1_watch.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567830/fantasy_studio/videos/05_col1_watch.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2214625,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567830/fantasy_studio/videos/05_col1_watch.m3u8"
+  },
+  "06_col1_ipad_left.mp4": {
+    "local_path": "/assets/videos/06_col1_ipad_left.mp4",
+    "public_id": "fantasy_studio/videos/06_col1_ipad_left",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567834/fantasy_studio/videos/06_col1_ipad_left.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567834/fantasy_studio/videos/06_col1_ipad_left.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2782215,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567834/fantasy_studio/videos/06_col1_ipad_left.m3u8"
+  },
+  "07_col1_room.mp4": {
+    "local_path": "/assets/videos/07_col1_room.mp4",
+    "public_id": "fantasy_studio/videos/07_col1_room",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567837/fantasy_studio/videos/07_col1_room.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567837/fantasy_studio/videos/07_col1_room.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 1904544,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567837/fantasy_studio/videos/07_col1_room.m3u8"
+  },
+  "08_col2_os.mp4": {
+    "local_path": "/assets/videos/08_col2_os.mp4",
+    "public_id": "fantasy_studio/videos/08_col2_os",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792666053/fantasy_studio/videos/08_col2_os.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792666053/fantasy_studio/videos/08_col2_os.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 1264863,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792666053/fantasy_studio/videos/08_col2_os.m3u8",
+    "version": 1792666053
+  },
+  "09_col2_c2v2.mp4": {
+    "local_path": "/assets/videos/09_col2_c2v2.mp4",
+    "public_id": "fantasy_studio/videos/09_col2_c2v2",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567842/fantasy_studio/videos/09_col2_c2v2.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567842/fantasy_studio/videos/09_col2_c2v2.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 1196849,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567842/fantasy_studio/videos/09_col2_c2v2.m3u8"
+  },
+  "10_col2_car.mp4": {
+    "local_path": "/assets/videos/10_col2_car.mp4",
+    "public_id": "fantasy_studio/videos/10_col2_car",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567847/fantasy_studio/videos/10_col2_car.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567847/fantasy_studio/videos/10_col2_car.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2490986,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567847/fantasy_studio/videos/10_col2_car.m3u8"
+  },
+  "11_col3_homepod.mp4": {
+    "local_path": "/assets/videos/11_col3_homepod.mp4",
+    "public_id": "fantasy_studio/videos/11_col3_homepod",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567851/fantasy_studio/videos/11_col3_homepod.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567851/fantasy_studio/videos/11_col3_homepod.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 3784969,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567851/fantasy_studio/videos/11_col3_homepod.m3u8"
+  },
+  "12_col3_ipad_right.mp4": {
+    "local_path": "/assets/videos/12_col3_ipad_right.mp4",
+    "public_id": "fantasy_studio/videos/12_col3_ipad_right",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567856/fantasy_studio/videos/12_col3_ipad_right.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567856/fantasy_studio/videos/12_col3_ipad_right.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 4957968,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567856/fantasy_studio/videos/12_col3_ipad_right.m3u8"
+  },
+  "13_col3_masterclass.mp4": {
+    "local_path": "/assets/videos/13_col3_masterclass.mp4",
+    "public_id": "fantasy_studio/videos/13_col3_masterclass",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567859/fantasy_studio/videos/13_col3_masterclass.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567859/fantasy_studio/videos/13_col3_masterclass.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2338107,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567859/fantasy_studio/videos/13_col3_masterclass.m3u8"
+  },
+  "14_ai_transformation.mp4": {
+    "local_path": "/assets/videos/14_ai_transformation.mp4",
+    "public_id": "fantasy_studio/videos/14_ai_transformation",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567862/fantasy_studio/videos/14_ai_transformation.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567862/fantasy_studio/videos/14_ai_transformation.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2742374,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567862/fantasy_studio/videos/14_ai_transformation.m3u8"
+  },
+  "15_pillar_intelligent_desktop.mp4": {
+    "local_path": "/assets/videos/15_pillar_intelligent_desktop.mp4",
+    "public_id": "fantasy_studio/videos/15_pillar_intelligent_desktop",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567865/fantasy_studio/videos/15_pillar_intelligent_desktop.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567865/fantasy_studio/videos/15_pillar_intelligent_desktop.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2199162,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567865/fantasy_studio/videos/15_pillar_intelligent_desktop.m3u8"
+  },
+  "16_pillar_intelligent_mobile.mp4": {
+    "local_path": "/assets/videos/16_pillar_intelligent_mobile.mp4",
+    "public_id": "fantasy_studio/videos/16_pillar_intelligent_mobile",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567867/fantasy_studio/videos/16_pillar_intelligent_mobile.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567867/fantasy_studio/videos/16_pillar_intelligent_mobile.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2099266,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567867/fantasy_studio/videos/16_pillar_intelligent_mobile.m3u8"
+  },
+  "17_pillar_digital_desktop.mp4": {
+    "local_path": "/assets/videos/17_pillar_digital_desktop.mp4",
+    "public_id": "fantasy_studio/videos/17_pillar_digital_desktop",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567869/fantasy_studio/videos/17_pillar_digital_desktop.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567869/fantasy_studio/videos/17_pillar_digital_desktop.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2781027,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567869/fantasy_studio/videos/17_pillar_digital_desktop.m3u8"
+  },
+  "18_pillar_digital_mobile.mp4": {
+    "local_path": "/assets/videos/18_pillar_digital_mobile.mp4",
+    "public_id": "fantasy_studio/videos/18_pillar_digital_mobile",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567872/fantasy_studio/videos/18_pillar_digital_mobile.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567872/fantasy_studio/videos/18_pillar_digital_mobile.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 3236911,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567872/fantasy_studio/videos/18_pillar_digital_mobile.m3u8"
+  },
+  "19_pillar_brand_desktop.mp4": {
+    "local_path": "/assets/videos/19_pillar_brand_desktop.mp4",
+    "public_id": "fantasy_studio/videos/19_pillar_brand_desktop",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567873/fantasy_studio/videos/19_pillar_brand_desktop.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567873/fantasy_studio/videos/19_pillar_brand_desktop.mp4",
+    "duration": 8.0,
+    "format": "mp4",
+    "bytes": 1370287,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567873/fantasy_studio/videos/19_pillar_brand_desktop.m3u8"
+  },
+  "20_pillar_brand_mobile.mp4": {
+    "local_path": "/assets/videos/20_pillar_brand_mobile.mp4",
+    "public_id": "fantasy_studio/videos/20_pillar_brand_mobile",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567875/fantasy_studio/videos/20_pillar_brand_mobile.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567875/fantasy_studio/videos/20_pillar_brand_mobile.mp4",
+    "duration": 8.0,
+    "format": "mp4",
+    "bytes": 1149097,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567875/fantasy_studio/videos/20_pillar_brand_mobile.m3u8"
+  },
+  "21_pillar_liv_golf_desktop.mp4": {
+    "local_path": "/assets/videos/21_pillar_liv_golf_desktop.mp4",
+    "public_id": "fantasy_studio/videos/21_pillar_liv_golf_desktop",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567877/fantasy_studio/videos/21_pillar_liv_golf_desktop.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567877/fantasy_studio/videos/21_pillar_liv_golf_desktop.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2839459,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567877/fantasy_studio/videos/21_pillar_liv_golf_desktop.m3u8"
+  },
+  "22_pillar_liv_golf_mobile.mp4": {
+    "local_path": "/assets/videos/22_pillar_liv_golf_mobile.mp4",
+    "public_id": "fantasy_studio/videos/22_pillar_liv_golf_mobile",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567880/fantasy_studio/videos/22_pillar_liv_golf_mobile.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567880/fantasy_studio/videos/22_pillar_liv_golf_mobile.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 3032688,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567880/fantasy_studio/videos/22_pillar_liv_golf_mobile.m3u8"
+  },
+  "23_carousel_launch_desktop.mp4": {
+    "local_path": "/assets/videos/23_carousel_launch_desktop.mp4",
+    "public_id": "fantasy_studio/videos/23_carousel_launch_desktop",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567882/fantasy_studio/videos/23_carousel_launch_desktop.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567882/fantasy_studio/videos/23_carousel_launch_desktop.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2328738,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567882/fantasy_studio/videos/23_carousel_launch_desktop.m3u8"
+  },
+  "24_carousel_launch_mobile.mp4": {
+    "local_path": "/assets/videos/24_carousel_launch_mobile.mp4",
+    "public_id": "fantasy_studio/videos/24_carousel_launch_mobile",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567885/fantasy_studio/videos/24_carousel_launch_mobile.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567885/fantasy_studio/videos/24_carousel_launch_mobile.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2413003,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567885/fantasy_studio/videos/24_carousel_launch_mobile.m3u8"
+  },
+  "25_storytelling_vimeo.mp4": {
+    "local_path": "/assets/videos/25_storytelling_vimeo.mp4",
+    "public_id": "fantasy_studio/videos/25_storytelling_vimeo",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567887/fantasy_studio/videos/25_storytelling_vimeo.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567887/fantasy_studio/videos/25_storytelling_vimeo.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2486102,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567887/fantasy_studio/videos/25_storytelling_vimeo.m3u8"
+  },
+  "26_storytelling_kohler.mp4": {
+    "local_path": "/assets/videos/26_storytelling_kohler.mp4",
+    "public_id": "fantasy_studio/videos/26_storytelling_kohler",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567890/fantasy_studio/videos/26_storytelling_kohler.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567890/fantasy_studio/videos/26_storytelling_kohler.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 2644163,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567890/fantasy_studio/videos/26_storytelling_kohler.m3u8"
+  },
+  "27_storytelling_sizzle_3.mp4": {
+    "local_path": "/assets/videos/27_storytelling_sizzle_3.mp4",
+    "public_id": "fantasy_studio/videos/27_storytelling_sizzle_3",
+    "secure_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567895/fantasy_studio/videos/27_storytelling_sizzle_3.mp4",
+    "optimized_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567895/fantasy_studio/videos/27_storytelling_sizzle_3.mp4",
+    "duration": 10.005,
+    "format": "mp4",
+    "bytes": 4453719,
+    "playback_url": "https://res.cloudinary.com/c075rrsz/video/upload/sp_auto/v1792567895/fantasy_studio/videos/27_storytelling_sizzle_3.m3u8"
+  }
+}

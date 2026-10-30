@@ -1,0 +1,104 @@
+[
+  {
+    "id": "work-1",
+    "title": "Aura Medical — Hospital & Clinic Management ERP",
+    "client": "Aura Health Network",
+    "category": "SaaS & Management Systems",
+    "description": "Tailor-made cloud hospital management system with patient EHR records, automated doctor appointments, pathology lab workflows, and multi-branch pharmacy billing.",
+    "video_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567827/fantasy_studio/videos/04_amper_platform.mp4",
+    "poster_url": "",
+    "live_link": "https://deedox.studio/services.html#saas",
+    "tags": [
+      "Hospital Management",
+      "Custom SaaS ERP",
+      "Cloud Architecture"
+    ],
+    "featured": true,
+    "sort_order": 1
+  },
+  {
+    "id": "work-2",
+    "title": "Zenith Grand — Hotel & Resort Hospitality Suite",
+    "client": "Zenith Hospitality Group",
+    "category": "Hotel & Resort ERP",
+    "description": "Complete hotel booking engine and guest management system featuring real-time room reservations, POS dining integration, housekeeping scheduling, and automated billing.",
+    "video_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567877/fantasy_studio/videos/21_pillar_liv_golf_desktop.mp4",
+    "poster_url": "",
+    "live_link": "https://deedox.studio/services.html#saas",
+    "tags": [
+      "Hotel Management",
+      "Booking Engine",
+      "ERP System"
+    ],
+    "featured": true,
+    "sort_order": 2
+  },
+  {
+    "id": "work-3",
+    "title": "Lumina Luxury — Authority Web Platform & SEO",
+    "client": "Lumina Flagship",
+    "category": "Website & Technical SEO",
+    "description": "Bespoke high-converting luxury web platform engineered for extreme speed and ranking #1 on competitive Google search queries with structured technical SEO.",
+    "video_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567882/fantasy_studio/videos/23_carousel_launch_desktop.mp4",
+    "poster_url": "",
+    "live_link": "https://deedox.studio/services.html#web",
+    "tags": [
+      "Custom Website",
+      "Technical SEO",
+      "Rank #1 Engine"
+    ],
+    "featured": true,
+    "sort_order": 3
+  },
+  {
+    "id": "work-4",
+    "title": "SwiftCart Retail — Omnichannel POS & Mobile App",
+    "client": "SwiftCart Retailers",
+    "category": "Mobile App & POS Software",
+    "description": "Unified retail commerce suite spanning native iOS & Android mobile shopping apps, desktop Windows/Mac barcode POS, and real-time inventory synchronization.",
+    "video_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567887/fantasy_studio/videos/25_storytelling_vimeo.mp4",
+    "poster_url": "",
+    "live_link": "https://deedox.studio/services.html#mobile",
+    "tags": [
+      "iOS & Android App",
+      "Desktop POS",
+      "Retail ERP"
+    ],
+    "featured": true,
+    "sort_order": 4
+  },
+  {
+    "id": "work-5",
+    "title": "Nexus AI Commercials & Meta Ads Growth",
+    "client": "Nexus Consumer Brand",
+    "category": "AI Video & Paid Growth",
+    "description": "High-retention AI-generated video commercials, UGC ad creatives, and high-ROI Meta & Google media buying that scaled customer acquisition by 340%.",
+    "video_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567890/fantasy_studio/videos/26_storytelling_kohler.mp4",
+    "poster_url": "",
+    "live_link": "https://deedox.studio/services.html#ai-video",
+    "tags": [
+      "AI Commercials",
+      "UGC Video Ads",
+      "Meta Ads Campaign"
+    ],
+    "featured": true,
+    "sort_order": 5
+  },
+  {
+    "id": "work-6",
+    "title": "OmniBot 24/7 — WhatsApp & Messenger CRM Automation",
+    "client": "Apex Global Ventures",
+    "category": "Sales Automation & CRM",
+    "description": "End-to-end sales automation engine integrating multi-lingual WhatsApp bots, Messenger lead qualification, and CRM pipeline routing operating 24 hours a day.",
+    "video_url": "https://res.cloudinary.com/c075rrsz/video/upload/v1792567865/fantasy_studio/videos/15_pillar_intelligent_desktop.mp4",
+    "poster_url": "",
+    "live_link": "https://deedox.studio/services.html#automation",
+    "tags": [
+      "WhatsApp Automation",
+      "AI Chatbots",
+      "24/7 Sales Funnel"
+    ],
+    "featured": true,
+    "sort_order": 6
+  }
+]

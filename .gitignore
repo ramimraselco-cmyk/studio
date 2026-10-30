@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+*.zip
+*bak*
+scratch/
+scratch_*
+__pycache__/
+.DS_Store
+Thumbs.db
+dist_deploy/
+dist_cloud_deploy/
+DEEDOX_DIRECT_DEPLOY/
+deedox-website-deploy-cloud/
+all_videos/
+deedox-website-source-code/
