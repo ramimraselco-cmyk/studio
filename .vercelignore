@@ -1,7 +1,11 @@
-# Ignore local development server and internal dev scripts from Vercel deployment
+# Ignore local development server and dev files from Vercel deployment
+local_server.js
 server.js
 scripts/
 *.bak
 *.log
-.git/
+*.zip
+scratch*
 .env
+.env.*
+node_modules/
