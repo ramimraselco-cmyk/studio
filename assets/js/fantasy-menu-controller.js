@@ -1,7 +1,7 @@
 /**
  * DEEDOX STUDIO — UNIVERSAL FANTASY MENU CONTROLLER
  * 100% Guaranteed Fullscreen Navigation across Mobile & Desktop.
- * Exposes window.openDeedoxMenu(), window.closeDeedoxMenu(), window.toggleDeedoxMenu().
+ * Single source of truth with strict 450ms debouncing (prevents double-tap/ghost-click bug).
  */
 (function() {
   'use strict';
@@ -20,6 +20,9 @@
       z-index: 10000 !important;
       -webkit-tap-highlight-color: transparent !important;
       touch-action: manipulation !important;
+    }
+    .sh-toggle *, .sh-menu-toggle *, #menuToggleBtn * {
+      pointer-events: none !important;
     }
     #deedox-menu {
       position: fixed !important;
@@ -139,8 +142,18 @@
     ];
     const closeButtons = document.querySelectorAll(closeSelectors.join(', '));
 
-    // Universal trigger binder supporting both click and fast touch
-    function bindTrigger(el, handler) {
+    // Debounce to strictly prevent mobile ghost double-trigger (touchend followed immediately by click)
+    let lastActionTime = 0;
+    function safeAction(fn, e) {
+      const now = Date.now();
+      if (now - lastActionTime < 450) {
+        return; // Ignore duplicate event within 450ms
+      }
+      lastActionTime = now;
+      fn(e);
+    }
+
+    function bindTrigger(el, actionFn) {
       if (!el || el.dataset.menuBound) return;
       el.dataset.menuBound = 'true';
 
@@ -151,14 +164,14 @@
         if (!touchMoved) {
           e.preventDefault();
           e.stopPropagation();
-          handler(e);
+          safeAction(actionFn, e);
         }
       });
 
       el.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        handler(e);
+        safeAction(actionFn, e);
       });
     }
 

@@ -1369,27 +1369,8 @@
 
 
 
-    menuToggles.forEach(btn => {
-
-      btn.addEventListener('click', (e) => {
-
-        e.preventDefault();
-
-        const isOpen = menuEl && menuEl.classList.contains('opacity-100');
-
-        if (isOpen) {
-
-          closeMenu();
-
-        } else {
-
-          openMenu();
-
-        }
-
-      });
-
-    });
+    // Note: Menu toggles are exclusively and reliably handled by fantasy-menu-controller.js
+    // to prevent duplicate click/touch race conditions and instant re-closing.
 
 
 
