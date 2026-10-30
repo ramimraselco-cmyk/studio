@@ -4,6 +4,7 @@
   "description": "DEEDOX - AI-Native Digital Product Design & Engineering Studio",
   "main": "server.js",
   "scripts": {
+    "build": "echo 'Vercel static assets ready'",
     "start": "node server.js",
     "dev": "node server.js",
     "seo": "node scripts/generate_all_seo.js && node scripts/sync_deploy_dirs.js",
