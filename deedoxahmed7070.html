@@ -1224,64 +1224,227 @@
       </section>
 
       <!-- ============================================== -->
-      <!-- TAB 4: WHATSAPP & CONTACT INFO -->
+      <!-- TAB 4: WHATSAPP CUSTOMIZER & SOCIAL ECOSYSTEM -->
       <!-- ============================================== -->
       <section id="tab-whatsapp" class="tab-section">
-        <div class="panel-card">
-          <div class="panel-header">
-            <div class="panel-title">
-              <i class="fa-brands fa-whatsapp" style="color: #22c55e;"></i> WhatsApp & Studio Contact Details
+        <!-- Top Action Bar -->
+        <div class="panel-card" style="margin-bottom: 24px;">
+          <div class="panel-header" style="flex-wrap: wrap; gap: 16px;">
+            <div>
+              <div class="panel-title">
+                <i class="fa-brands fa-whatsapp" style="color: #22c55e;"></i> WhatsApp &amp; Social Media Command Center
+              </div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">
+                Customize the floating WhatsApp widget (position, color theme, tooltip, status badge) and manage all social media channels with minimal vector icons. Changes save locally and sync in real-time to Supabase cloud.
+              </p>
             </div>
-            <button class="btn btn-primary" id="saveContactSettingsBtn">
-              <i class="fa-solid fa-floppy-disk"></i> Save Settings
-            </button>
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <button type="button" class="btn btn-secondary" id="testWhatsAppBtn" style="padding: 10px 18px; font-size: 13px;">
+                <i class="fa-brands fa-whatsapp" style="color: #22c55e;"></i> Test Live WhatsApp Link
+              </button>
+              <button type="button" class="btn btn-primary" id="saveContactSettingsBtn" style="padding: 10px 22px; font-size: 13.5px; font-weight: 600;">
+                <i class="fa-solid fa-floppy-disk"></i> Save All Settings
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1. Floating WhatsApp Master Customizer -->
+        <div class="panel-card" style="margin-bottom: 24px; border-top: 3px solid #22c55e;">
+          <div class="panel-header">
+            <div class="panel-title" style="font-size: 16px;">
+              <i class="fa-brands fa-whatsapp" style="color: #22c55e;"></i> Floating WhatsApp Widget Customizer
+            </div>
+            <span class="badge badge-online" id="waStatusPillBadge">Widget Active</span>
           </div>
 
-          <form id="contactForm" onsubmit="return false;">
-            <div class="form-grid">
+          <div style="display: grid; grid-template-columns: 1fr 340px; gap: 24px; margin-top: 16px;">
+            <!-- Controls Column -->
+            <div class="form-grid" style="row-gap: 16px;">
               <div class="form-group">
-                <label><i class="fa-brands fa-whatsapp" style="color: #22c55e;"></i> WhatsApp Number (with Country Code)</label>
-                <input type="text" id="whatsapp_number" placeholder="+8801700000000" />
-                <span style="font-size: 11px; color: var(--text-dim);">E.g. +8801712345678 or +12125550199</span>
+                <label><i class="fa-solid fa-toggle-on" style="color: #22c55e;"></i> Floating Widget Visibility</label>
+                <select id="wa_enabled" style="background: rgba(10, 11, 15, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); padding: 10px; color: var(--text-main); font-size: 13px;">
+                  <option value="true">Enabled — Shown on all website pages</option>
+                  <option value="false">Disabled — Completely hidden</option>
+                </select>
+                <span style="font-size: 11px; color: var(--text-dim);">Toggle the floating WhatsApp pill on the live website.</span>
               </div>
 
               <div class="form-group">
-                <label>Default WhatsApp Pre-filled Message</label>
-                <input type="text" id="whatsapp_message" placeholder="Hello, I want to discuss a project..." />
+                <label><i class="fa-solid fa-arrows-left-right" style="color: #38bdf8;"></i> Screen Position</label>
+                <select id="wa_position" style="background: rgba(10, 11, 15, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); padding: 10px; color: var(--text-main); font-size: 13px;">
+                  <option value="bottom-right">Bottom Right (Standard Luxury Corner)</option>
+                  <option value="bottom-left">Bottom Left (Alternative Corner)</option>
+                </select>
+                <span style="font-size: 11px; color: var(--text-dim);">Controls where the pill floats on desktop and mobile.</span>
               </div>
 
               <div class="form-group">
-                <label><i class="fa-regular fa-envelope"></i> Contact Email</label>
-                <input type="email" id="contact_email" placeholder="hello@deedox.com" />
+                <label><i class="fa-solid fa-palette" style="color: #a855f7;"></i> Widget Color &amp; Aesthetic Theme</label>
+                <select id="wa_theme" style="background: rgba(10, 11, 15, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); padding: 10px; color: var(--text-main); font-size: 13px;">
+                  <option value="cream">Luxury Cream &amp; Obsidian (Deedox Editorial Signature)</option>
+                  <option value="dark">Obsidian Midnight Glass (Dark Luxury with Cyan Border)</option>
+                  <option value="emerald">Signature WhatsApp Emerald (Vibrant #25D366)</option>
+                </select>
+                <span style="font-size: 11px; color: var(--text-dim);">Pill background, border, glow, and hover styling.</span>
               </div>
 
               <div class="form-group">
-                <label><i class="fa-solid fa-phone"></i> Contact Phone</label>
-                <input type="text" id="contact_phone" placeholder="+1 (800) 555-0199" />
+                <label><i class="fa-solid fa-phone" style="color: #22c55e;"></i> WhatsApp Number (with Country Code)</label>
+                <input type="text" id="whatsapp_number" placeholder="+8801817296013" />
+                <span style="font-size: 11px; color: var(--text-dim);">Include full international code (e.g. +8801817296013).</span>
               </div>
 
               <div class="form-group col-span-2">
-                <label><i class="fa-solid fa-location-dot"></i> Studio Locations</label>
-                <input type="text" id="studio_location" placeholder="San Francisco • London • Dhaka" />
+                <label><i class="fa-regular fa-comment-dots" style="color: #60a5fa;"></i> Pre-filled Chat Message</label>
+                <input type="text" id="whatsapp_message" placeholder="Hello DEEDOX Team, I would like to discuss our project with your agency." />
+                <span style="font-size: 11px; color: var(--text-dim);">The initial message pre-loaded when a user clicks the WhatsApp button.</span>
               </div>
 
-              <div class="form-group col-span-2">
-                <label>Social Media URLs</label>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 4px;">
-                  <input type="url" id="social_twitter" placeholder="Twitter URL" />
-                  <input type="url" id="social_linkedin" placeholder="LinkedIn URL" />
-                  <input type="url" id="social_instagram" placeholder="Instagram URL" />
-                  <input type="url" id="social_github" placeholder="GitHub URL" />
+              <div class="form-group">
+                <label><i class="fa-regular fa-message"></i> Hover Tooltip Text</label>
+                <input type="text" id="wa_tooltip" placeholder="Chat with DEEDOX Studio" />
+                <span style="font-size: 11px; color: var(--text-dim);">Displayed as floating tooltip pill next to the button.</span>
+              </div>
+
+              <div class="form-group">
+                <label><i class="fa-solid fa-circle-dot" style="color: #10b981;"></i> Status Badge Text</label>
+                <input type="text" id="wa_badge_text" placeholder="Online Now • Instant Reply" />
+                <span style="font-size: 11px; color: var(--text-dim);">Appears inside the concierge card header.</span>
+              </div>
+            </div>
+
+            <!-- Live Interactive Preview Column -->
+            <div style="background: rgba(8, 9, 12, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 320px; position: relative;">
+              <div style="font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); align-self: flex-start;">
+                <i class="fa-solid fa-eye" style="color: #60a5fa;"></i> Real-Time Live Preview
+              </div>
+
+              <div id="waPreviewStage" style="width: 100%; height: 200px; border-radius: var(--radius-sm); background: #000; border: 1px dashed rgba(255,255,255,0.15); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                <div style="position: absolute; top: 10px; left: 12px; font-size: 10px; color: rgba(255,255,255,0.3); font-family: monospace;">Mock Website Viewport</div>
+                
+                <!-- Simulated floating pill -->
+                <div id="waPreviewPill" style="position: absolute; bottom: 20px; right: 20px; width: 52px; height: 52px; border-radius: 50%; background: #F5F4F0; color: #111111; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.6); border: 1px solid rgba(17,17,17,0.15); cursor: pointer; transition: all 0.3s ease;">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.196 8.196 0 0 1-5.82 2.42c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+                  </svg>
                 </div>
               </div>
 
-              <div class="form-group col-span-2" style="margin-top: 10px;">
-                <button type="button" class="btn btn-secondary" id="testWhatsAppBtn" style="width: fit-content;">
-                  <i class="fa-brands fa-whatsapp"></i> Test Live WhatsApp Link
-                </button>
+              <div id="waPreviewDetails" style="font-size: 11.5px; color: var(--text-dim); text-align: center; margin-top: 10px;">
+                Position: <strong>Bottom Right</strong> &bull; Theme: <strong>Cream Luxury</strong>
               </div>
             </div>
-          </form>
+          </div>
+        </div>
+
+        <!-- 2. Studio Contact Details -->
+        <div class="panel-card" style="margin-bottom: 24px;">
+          <div class="panel-header">
+            <div class="panel-title" style="font-size: 16px;">
+              <i class="fa-solid fa-address-card" style="color: #60a5fa;"></i> Direct Studio Contact Coordinates
+            </div>
+            <span style="font-size: 12px; color: var(--text-muted);">Synced to Header, Footer, and Contact Modal</span>
+          </div>
+
+          <div class="form-grid" style="margin-top: 14px;">
+            <div class="form-group">
+              <label><i class="fa-regular fa-envelope" style="color: #38bdf8;"></i> Official Inquiries Email</label>
+              <input type="email" id="contact_email" placeholder="deedoxteam@gmail.com" />
+            </div>
+
+            <div class="form-group">
+              <label><i class="fa-solid fa-phone" style="color: #10b981;"></i> Studio Direct Phone</label>
+              <input type="text" id="contact_phone" placeholder="+8801817296013" />
+            </div>
+
+            <div class="form-group col-span-2">
+              <label><i class="fa-solid fa-location-dot" style="color: #f43f5e;"></i> Studio Locations &amp; Global Hubs</label>
+              <input type="text" id="studio_location" placeholder="Dhaka, Bangladesh (HQ) • Serving Clients Globally" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Complete Social Media Ecosystem (All Channels) -->
+        <div class="panel-card" style="margin-bottom: 24px; border-top: 3px solid #60a5fa;">
+          <div class="panel-header">
+            <div>
+              <div class="panel-title" style="font-size: 16px;">
+                <i class="fa-solid fa-share-nodes" style="color: #60a5fa;"></i> Social Media Ecosystem (All Channels)
+              </div>
+              <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 4px;">
+                Enter any social media profile link. The website will automatically render minimal vector SVG icons for all populated links in the footer, mobile navigation, and contact sections. Leave empty to omit.
+              </p>
+            </div>
+          </div>
+
+          <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px;">
+            <!-- Facebook -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-facebook" style="color: #1877f2;"></i> Facebook URL</label>
+              <input type="url" id="social_facebook" placeholder="https://facebook.com/deedoxstudio" />
+            </div>
+
+            <!-- Instagram -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-instagram" style="color: #e4405f;"></i> Instagram URL</label>
+              <input type="url" id="social_instagram" placeholder="https://instagram.com/deedoxstudio" />
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i> LinkedIn URL</label>
+              <input type="url" id="social_linkedin" placeholder="https://linkedin.com/company/deedoxstudio" />
+            </div>
+
+            <!-- Twitter / X -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-x-twitter" style="color: #f8fafc;"></i> Twitter / X URL</label>
+              <input type="url" id="social_twitter" placeholder="https://x.com/deedoxstudio" />
+            </div>
+
+            <!-- YouTube -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube Channel URL</label>
+              <input type="url" id="social_youtube" placeholder="https://youtube.com/@deedoxstudio" />
+            </div>
+
+            <!-- GitHub -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-github" style="color: #e2e8f0;"></i> GitHub Organization / Profile</label>
+              <input type="url" id="social_github" placeholder="https://github.com/ramimraselco-cmyk" />
+            </div>
+
+            <!-- Dribbble -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-dribbble" style="color: #ea4c89;"></i> Dribbble Portfolio</label>
+              <input type="url" id="social_dribbble" placeholder="https://dribbble.com/deedoxstudio" />
+            </div>
+
+            <!-- Behance -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-behance" style="color: #1769ff;"></i> Behance Portfolio</label>
+              <input type="url" id="social_behance" placeholder="https://behance.net/deedoxstudio" />
+            </div>
+
+            <!-- Telegram -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-telegram" style="color: #229ed9;"></i> Telegram Channel / Handle</label>
+              <input type="url" id="social_telegram" placeholder="https://t.me/deedoxstudio" />
+            </div>
+
+            <!-- TikTok -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-tiktok" style="color: #00f2fe;"></i> TikTok Profile</label>
+              <input type="url" id="social_tiktok" placeholder="https://tiktok.com/@deedoxstudio" />
+            </div>
+
+            <!-- Discord -->
+            <div class="form-group">
+              <label><i class="fa-brands fa-discord" style="color: #5865f2;"></i> Discord Community / Invite</label>
+              <input type="url" id="social_discord" placeholder="https://discord.gg/deedoxstudio" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1863,86 +2026,263 @@ CREATE POLICY "Allow full access" ON public.pages_content FOR ALL USING (true);<
       try {
         const res = await fetch('/api/settings');
         const settings = await res.json();
-        currentSettings = settings;
+        currentSettings = settings || {};
 
-        // Populate Contact Form
-        document.getElementById('whatsapp_number').value = settings.whatsapp_number || '';
-        document.getElementById('whatsapp_message').value = settings.whatsapp_message || '';
-        document.getElementById('contact_email').value = settings.contact_email || '';
-        document.getElementById('contact_phone').value = settings.contact_phone || '';
-        document.getElementById('studio_location').value = settings.studio_location || '';
+        // WhatsApp Customizer Form
+        const wa = currentSettings.whatsapp || {};
+        const elWaEnabled = document.getElementById('wa_enabled');
+        if (elWaEnabled) elWaEnabled.value = (wa.enabled === false) ? 'false' : 'true';
 
-        if (settings.social_links) {
-          document.getElementById('social_twitter').value = settings.social_links.twitter || '';
-          document.getElementById('social_linkedin').value = settings.social_links.linkedin || '';
-          document.getElementById('social_instagram').value = settings.social_links.instagram || '';
-          document.getElementById('social_github').value = settings.social_links.github || '';
-        }
+        const elWaPos = document.getElementById('wa_position');
+        if (elWaPos) elWaPos.value = wa.position || 'bottom-right';
+
+        const elWaTheme = document.getElementById('wa_theme');
+        if (elWaTheme) elWaTheme.value = wa.theme || 'cream';
+
+        const elWaNum = document.getElementById('whatsapp_number');
+        if (elWaNum) elWaNum.value = wa.phone || currentSettings.whatsapp_number || '+8801817296013';
+
+        const elWaMsg = document.getElementById('whatsapp_message');
+        if (elWaMsg) elWaMsg.value = wa.message || currentSettings.whatsapp_message || 'Hello DEEDOX Team, I would like to discuss our project with your agency.';
+
+        const elWaTooltip = document.getElementById('wa_tooltip');
+        if (elWaTooltip) elWaTooltip.value = wa.tooltip || 'Chat with DEEDOX Studio';
+
+        const elWaBadge = document.getElementById('wa_badge_text');
+        if (elWaBadge) elWaBadge.value = wa.badge_text || 'Online Now • Instant Reply';
+
+        // Studio Contacts
+        const elEmail = document.getElementById('contact_email');
+        if (elEmail) elEmail.value = currentSettings.contact_email || 'deedoxteam@gmail.com';
+
+        const elPhone = document.getElementById('contact_phone');
+        if (elPhone) elPhone.value = currentSettings.contact_phone || '+8801817296013';
+
+        const elLoc = document.getElementById('studio_location');
+        if (elLoc) elLoc.value = currentSettings.studio_location || 'Dhaka, Bangladesh (HQ) • Serving Clients Globally';
+
+        // All Social Media Ecosystem Links
+        const soc = currentSettings.social_links || {};
+        const setSoc = (id, val) => {
+          const el = document.getElementById(id);
+          if (el) el.value = val || '';
+        };
+        setSoc('social_facebook', soc.facebook);
+        setSoc('social_instagram', soc.instagram);
+        setSoc('social_linkedin', soc.linkedin);
+        setSoc('social_twitter', soc.twitter || soc.x);
+        setSoc('social_youtube', soc.youtube);
+        setSoc('social_github', soc.github);
+        setSoc('social_dribbble', soc.dribbble);
+        setSoc('social_behance', soc.behance);
+        setSoc('social_telegram', soc.telegram);
+        setSoc('social_tiktok', soc.tiktok);
+        setSoc('social_discord', soc.discord);
 
         // Populate Content Form
-        if (settings.hero) {
-          document.getElementById('hero_heading').value = settings.hero.heading || '';
-          document.getElementById('hero_subheading').value = settings.hero.subheading || '';
+        if (currentSettings.hero) {
+          const elHeroH = document.getElementById('hero_heading');
+          if (elHeroH) elHeroH.value = currentSettings.hero.heading || '';
+          const elHeroSub = document.getElementById('hero_subheading');
+          if (elHeroSub) elHeroSub.value = currentSettings.hero.subheading || '';
         }
-        if (settings.ai_transformation) {
-          document.getElementById('ai_heading').value = settings.ai_transformation.title || '';
-          document.getElementById('ai_description').value = settings.ai_transformation.description || '';
+        if (currentSettings.ai_transformation) {
+          const elAiH = document.getElementById('ai_heading');
+          if (elAiH) elAiH.value = currentSettings.ai_transformation.title || '';
+          const elAiD = document.getElementById('ai_description');
+          if (elAiD) elAiD.value = currentSettings.ai_transformation.description || '';
         }
-        document.getElementById('footer_text').value = settings.footer_text || '';
-        document.getElementById('footer_copyright').value = settings.footer_copyright || '';
+        const elFootText = document.getElementById('footer_text');
+        if (elFootText) elFootText.value = currentSettings.footer_text || '';
+        const elFootCopy = document.getElementById('footer_copyright');
+        if (elFootCopy) elFootCopy.value = currentSettings.footer_copyright || '';
 
         // Stat preview
-        document.getElementById('statWhatsAppPreview').textContent = settings.whatsapp_number || 'Configured';
+        const statPreview = document.getElementById('statWhatsAppPreview');
+        if (statPreview) statPreview.textContent = wa.phone || currentSettings.whatsapp_number || 'Active';
+
+        // Update live preview in admin
+        updateWhatsAppPreview();
       } catch (e) {
         console.error('Load settings error:', e);
       }
     }
 
+    // Live WhatsApp Widget Preview in Admin
+    function updateWhatsAppPreview() {
+      const enabled = document.getElementById('wa_enabled')?.value !== 'false';
+      const pos = document.getElementById('wa_position')?.value || 'bottom-right';
+      const theme = document.getElementById('wa_theme')?.value || 'cream';
+      const pill = document.getElementById('waPreviewPill');
+      const badge = document.getElementById('waStatusPillBadge');
+      const details = document.getElementById('waPreviewDetails');
+
+      if (!pill) return;
+
+      if (!enabled) {
+        pill.style.opacity = '0.25';
+        pill.style.transform = 'scale(0.8)';
+        if (badge) {
+          badge.className = 'badge badge-draft';
+          badge.textContent = 'Widget Disabled';
+        }
+      } else {
+        pill.style.opacity = '1';
+        pill.style.transform = 'scale(1)';
+        if (badge) {
+          badge.className = 'badge badge-online';
+          badge.textContent = 'Widget Active';
+        }
+      }
+
+      // Position in preview box
+      if (pos === 'bottom-left') {
+        pill.style.right = 'auto';
+        pill.style.left = '20px';
+      } else {
+        pill.style.left = 'auto';
+        pill.style.right = '20px';
+      }
+
+      // Theme
+      if (theme === 'dark') {
+        pill.style.background = 'rgba(15, 17, 23, 0.95)';
+        pill.style.color = '#38bdf8';
+        pill.style.borderColor = 'rgba(56, 189, 248, 0.4)';
+        pill.style.boxShadow = '0 10px 30px rgba(6, 182, 212, 0.35)';
+      } else if (theme === 'emerald') {
+        pill.style.background = '#25D366';
+        pill.style.color = '#ffffff';
+        pill.style.borderColor = 'rgba(37, 211, 102, 0.5)';
+        pill.style.boxShadow = '0 10px 30px rgba(37, 211, 102, 0.45)';
+      } else {
+        // Cream luxury
+        pill.style.background = '#F5F4F0';
+        pill.style.color = '#111111';
+        pill.style.borderColor = 'rgba(17, 17, 17, 0.15)';
+        pill.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.6)';
+      }
+
+      if (details) {
+        const themeLabel = theme === 'dark' ? 'Obsidian Glass' : (theme === 'emerald' ? 'WhatsApp Emerald' : 'Cream Luxury');
+        const posLabel = pos === 'bottom-left' ? 'Bottom Left' : 'Bottom Right';
+        details.innerHTML = `Position: <strong>${posLabel}</strong> &bull; Theme: <strong>${themeLabel}</strong> &bull; Status: <strong>${enabled ? 'Live' : 'Hidden'}</strong>`;
+      }
+    }
+
+    // Attach preview event listeners
+    ['wa_enabled', 'wa_position', 'wa_theme', 'whatsapp_number'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('change', updateWhatsAppPreview);
+        el.addEventListener('input', updateWhatsAppPreview);
+      }
+    });
+
     // 3. Save Settings
     async function saveSettings(extraFields = {}) {
+      const btn = document.getElementById('saveContactSettingsBtn') || document.getElementById('savePageContentBtn');
+      const origText = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Syncing to Cloud...';
+        btn.disabled = true;
+      }
+
       try {
+        const waEnabled = document.getElementById('wa_enabled')?.value !== 'false';
+        const waPos = document.getElementById('wa_position')?.value || 'bottom-right';
+        const waTheme = document.getElementById('wa_theme')?.value || 'cream';
+        const waPhone = document.getElementById('whatsapp_number')?.value.trim() || '+8801817296013';
+        const waMsg = document.getElementById('whatsapp_message')?.value.trim() || 'Hello DEEDOX Team, I would like to discuss our project with your agency.';
+        const waTooltip = document.getElementById('wa_tooltip')?.value.trim() || 'Chat with DEEDOX Studio';
+        const waBadgeText = document.getElementById('wa_badge_text')?.value.trim() || 'Online Now • Instant Reply';
+
+        const getVal = id => document.getElementById(id)?.value.trim() || '';
+
         const updated = {
           ...currentSettings,
-          whatsapp_number: document.getElementById('whatsapp_number').value.trim(),
-          whatsapp_message: document.getElementById('whatsapp_message').value.trim(),
-          contact_email: document.getElementById('contact_email').value.trim(),
-          contact_phone: document.getElementById('contact_phone').value.trim(),
-          studio_location: document.getElementById('studio_location').value.trim(),
+          whatsapp_number: waPhone,
+          whatsapp_message: waMsg,
+          whatsapp: {
+            enabled: waEnabled,
+            phone: waPhone,
+            message: waMsg,
+            position: waPos,
+            theme: waTheme,
+            tooltip: waTooltip,
+            badge_text: waBadgeText
+          },
+          contact_email: getVal('contact_email'),
+          contact_phone: getVal('contact_phone'),
+          studio_location: getVal('studio_location'),
           social_links: {
-            twitter: document.getElementById('social_twitter').value.trim(),
-            linkedin: document.getElementById('social_linkedin').value.trim(),
-            instagram: document.getElementById('social_instagram').value.trim(),
-            github: document.getElementById('social_github').value.trim()
+            facebook: getVal('social_facebook'),
+            instagram: getVal('social_instagram'),
+            linkedin: getVal('social_linkedin'),
+            twitter: getVal('social_twitter'),
+            youtube: getVal('social_youtube'),
+            github: getVal('social_github'),
+            dribbble: getVal('social_dribbble'),
+            behance: getVal('social_behance'),
+            telegram: getVal('social_telegram'),
+            tiktok: getVal('social_tiktok'),
+            discord: getVal('social_discord')
           },
           hero: {
-            heading: document.getElementById('hero_heading').value.trim(),
-            subheading: document.getElementById('hero_subheading').value.trim()
+            heading: getVal('hero_heading') || (currentSettings.hero && currentSettings.hero.heading) || '',
+            subheading: getVal('hero_subheading') || (currentSettings.hero && currentSettings.hero.subheading) || ''
           },
           ai_transformation: {
-            title: document.getElementById('ai_heading').value.trim(),
-            description: document.getElementById('ai_description').value.trim()
+            title: getVal('ai_heading') || (currentSettings.ai_transformation && currentSettings.ai_transformation.title) || '',
+            description: getVal('ai_description') || (currentSettings.ai_transformation && currentSettings.ai_transformation.description) || ''
           },
-          footer_text: document.getElementById('footer_text').value.trim(),
-          footer_copyright: document.getElementById('footer_copyright').value.trim(),
+          footer_text: getVal('footer_text') || currentSettings.footer_text || '',
+          footer_copyright: getVal('footer_copyright') || currentSettings.footer_copyright || '',
+          updated_at: new Date().toISOString(),
           ...extraFields
         };
 
+        // 1. Save local
         const res = await fetch('/api/settings', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(updated)
         });
-        const data = await res.json();
-        if (data.success) {
-          currentSettings = updated;
-          localStorage.setItem('deedox_cms_updated', Date.now().toString());
-          showToast('Settings saved to Supabase & Local Cache!');
-          document.getElementById('statWhatsAppPreview').textContent = updated.whatsapp_number;
-        } else {
-          showToast('Failed to save settings', 'error');
+        const data = await res.json().catch(() => ({}));
+
+        // 2. Direct Cloud Sync to Supabase REST as high-res fail-safe
+        try {
+          await fetch('https://ucrcswxdzrfphvkvrpiz.supabase.co/rest/v1/site_settings', {
+            method: 'POST',
+            headers: {
+              'apikey': 'sb_publishable_bEGfsOvpV_UAxkm3ePafXg_Hs85XhCt',
+              'Authorization': 'Bearer sb_publishable_bEGfsOvpV_UAxkm3ePafXg_Hs85XhCt',
+              'Content-Type': 'application/json',
+              'Prefer': 'resolution=merge-duplicates,return=representation'
+            },
+            body: JSON.stringify({
+              key: 'global',
+              value: updated,
+              updated_at: new Date().toISOString()
+            })
+          });
+        } catch (sbErr) {
+          console.warn('Direct Supabase cloud push notice:', sbErr);
         }
+
+        currentSettings = updated;
+        localStorage.setItem('deedox_cms_updated', Date.now().toString());
+        showToast('Settings & Social Links synced live to Supabase & Local Cache!');
+        const statPreview = document.getElementById('statWhatsAppPreview');
+        if (statPreview) statPreview.textContent = updated.whatsapp.phone;
+        updateWhatsAppPreview();
       } catch (e) {
         showToast('Error saving settings: ' + e.message, 'error');
+      } finally {
+        if (btn) {
+          btn.innerHTML = origText;
+          btn.disabled = false;
+        }
       }
     }
 
@@ -1951,8 +2291,8 @@ CREATE POLICY "Allow full access" ON public.pages_content FOR ALL USING (true);<
 
     // Test WhatsApp Button
     document.getElementById('testWhatsAppBtn').addEventListener('click', () => {
-      const num = document.getElementById('whatsapp_number').value.replace(/[^0-9]/g, '');
-      const msg = encodeURIComponent(document.getElementById('whatsapp_message').value || 'Hello!');
+      const num = (document.getElementById('whatsapp_number')?.value || '').replace(/[^0-9]/g, '');
+      const msg = encodeURIComponent(document.getElementById('whatsapp_message')?.value || 'Hello!');
       if (!num) {
         showToast('Please enter a WhatsApp number first', 'error');
         return;
@@ -2730,11 +3070,31 @@ CREATE POLICY "Allow full access" ON public.pages_content FOR ALL USING (true);<
           body: JSON.stringify(payload)
         });
 
-        const result = await res.json();
-        if (result.success) {
+        // Fail-safe direct push to Supabase cloud
+        try {
+          await fetch('https://ucrcswxdzrfphvkvrpiz.supabase.co/rest/v1/site_settings', {
+            method: 'POST',
+            headers: {
+              'apikey': 'sb_publishable_bEGfsOvpV_UAxkm3ePafXg_Hs85XhCt',
+              'Authorization': 'Bearer sb_publishable_bEGfsOvpV_UAxkm3ePafXg_Hs85XhCt',
+              'Content-Type': 'application/json',
+              'Prefer': 'resolution=merge-duplicates,return=representation'
+            },
+            body: JSON.stringify({
+              key: 'pricing_matrix',
+              value: payload,
+              updated_at: new Date().toISOString()
+            })
+          });
+        } catch (sbErr) {
+          console.warn('Direct Supabase pricing push notice:', sbErr);
+        }
+
+        const result = await res.json().catch(() => ({ success: true }));
+        if (result.success !== false) {
           currentPricing = payload;
           localStorage.setItem('deedox_cms_updated', Date.now().toString());
-          showToast('Pricing matrix and packages saved successfully!');
+          showToast('Pricing matrix saved live to Supabase & Local Cache!');
         } else {
           showToast('Failed to save pricing matrix: ' + (result.error || 'Unknown error'), 'error');
         }

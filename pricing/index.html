@@ -3362,9 +3362,28 @@
     // ---------------------------------------------------------
     async function loadDynamicPricing() {
       try {
-        const res = await fetch('/api/pricing?_t=' + Date.now(), { cache: 'no-store' });
-        if (!res.ok) return;
-        const data = await res.json();
+        let data = null;
+        try {
+          const sbRes = await fetch('https://ucrcswxdzrfphvkvrpiz.supabase.co/rest/v1/site_settings?key=eq.pricing_matrix&select=value', {
+            headers: {
+              'apikey': 'sb_publishable_bEGfsOvpV_UAxkm3ePafXg_Hs85XhCt',
+              'Authorization': 'Bearer sb_publishable_bEGfsOvpV_UAxkm3ePafXg_Hs85XhCt'
+            },
+            cache: 'no-store'
+          });
+          if (sbRes.ok) {
+            const rows = await sbRes.json();
+            if (rows && rows.length > 0 && rows[0].value) data = rows[0].value;
+          }
+        } catch(e) {}
+        if (!data) {
+          const res = await fetch('/api/pricing?_t=' + Date.now(), { cache: 'no-store' });
+          if (res.ok) data = await res.json();
+        }
+        if (!data) {
+          const res = await fetch('/data/pricing.json?_t=' + Date.now(), { cache: 'no-store' });
+          if (res.ok) data = await res.json();
+        }
         if (!data || !Array.isArray(data.tiers)) return;
 
         if (data.tiers[0]) {
